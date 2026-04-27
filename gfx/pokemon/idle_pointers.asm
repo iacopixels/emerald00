@@ -1,12 +1,12 @@
 AnimationIdlePointers:
 	table_width 2
-	dw BulbasaurAnimationIdle
+	dw TreeckoAnimationIdle
 	dw IvysaurAnimationIdle
 	dw VenusaurAnimationIdle
-	dw CharmanderAnimationIdle
+	dw TorchicAnimationIdle
 	dw CharmeleonAnimationIdle
 	dw CharizardAnimationIdle
-	dw SquirtleAnimationIdle
+	dw MudkipAnimationIdle
 	dw WartortleAnimationIdle
 	dw BlastoiseAnimationIdle
 	dw CaterpieAnimationIdle
@@ -18,7 +18,7 @@ AnimationIdlePointers:
 	dw PidgeyAnimationIdle
 	dw PidgeottoAnimationIdle
 	dw PidgeotAnimationIdle
-	dw RattataAnimationIdle
+	dw PoochyenaAnimationIdle
 	dw RaticateAnimationIdle
 	dw SpearowAnimationIdle
 	dw FearowAnimationIdle

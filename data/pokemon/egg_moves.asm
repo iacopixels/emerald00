@@ -10,45 +10,10 @@ SECTION "Egg Moves", ROMX
 
 INCLUDE "data/pokemon/egg_move_pointers.asm"
 
-BulbasaurEggMoves:
-	db LIGHT_SCREEN
-	db SKULL_BASH
-	db SAFEGUARD
-	db RAZOR_WIND
-	db PETAL_DANCE
-	db -1 ; end
-
-CharmanderEggMoves:
-	db BELLY_DRUM
-	db ANCIENTPOWER
-	db ROCK_SLIDE
-	db BITE
-	db OUTRAGE
-	db BEAT_UP
-	db -1 ; end
-
-SquirtleEggMoves:
-	db MIRROR_COAT
-	db HAZE
-	db MIST
-	db CONFUSION
-	db FORESIGHT
-	db FLAIL
-	db -1 ; end
-
 PidgeyEggMoves:
 	db PURSUIT
 	db FAINT_ATTACK
 	db FORESIGHT
-	db -1 ; end
-
-RattataEggMoves:
-	db SCREECH
-	db FLAME_WHEEL
-	db FURY_SWIPES
-	db BITE
-	db COUNTER
-	db REVERSAL
 	db -1 ; end
 
 SpearowEggMoves:

@@ -1,12 +1,12 @@
 FramesPointers:
 	table_width 2
-	dw BulbasaurFrames
+	dw TreeckoFrames
 	dw IvysaurFrames
 	dw VenusaurFrames
-	dw CharmanderFrames
+	dw TorchicFrames
 	dw CharmeleonFrames
 	dw CharizardFrames
-	dw SquirtleFrames
+	dw MudkipFrames
 	dw WartortleFrames
 	dw BlastoiseFrames
 	dw CaterpieFrames
@@ -18,7 +18,7 @@ FramesPointers:
 	dw PidgeyFrames
 	dw PidgeottoFrames
 	dw PidgeotFrames
-	dw RattataFrames
+	dw PoochyenaFrames
 	dw RaticateFrames
 	dw SpearowFrames
 	dw FearowFrames

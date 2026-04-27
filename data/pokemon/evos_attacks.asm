@@ -14,8 +14,7 @@ SECTION "Evolutions and Attacks", ROMX
 
 INCLUDE "data/pokemon/evos_attacks_pointers.asm"
 
-BulbasaurEvosAttacks:
-	db EVOLVE_LEVEL, 16, IVYSAUR
+TreeckoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 4, GROWL
@@ -66,8 +65,7 @@ VenusaurEvosAttacks:
 	db 65, SOLARBEAM
 	db 0 ; no more level-up moves
 
-CharmanderEvosAttacks:
-	db EVOLVE_LEVEL, 16, CHARMELEON
+TorchicEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, GROWL
@@ -114,8 +112,7 @@ CharizardEvosAttacks:
 	db 64, FIRE_SPIN
 	db 0 ; no more level-up moves
 
-SquirtleEvosAttacks:
-	db EVOLVE_LEVEL, 16, WARTORTLE
+MudkipEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 4, TAIL_WHIP
@@ -263,8 +260,7 @@ PidgeotEvosAttacks:
 	db 61, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
-RattataEvosAttacks:
-	db EVOLVE_LEVEL, 20, RATICATE
+PoochyenaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP

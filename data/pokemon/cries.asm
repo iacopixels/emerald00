@@ -6,13 +6,13 @@ ENDM
 PokemonCries::
 ; entries correspond to constants/pokemon_constants.asm
 	table_width MON_CRY_LENGTH
-	mon_cry CRY_BULBASAUR,   128,  129 ; BULBASAUR
+	mon_cry CRY_BULBASAUR,   128,  129 ; TREECKO
 	mon_cry CRY_BULBASAUR,    32,  256 ; IVYSAUR
 	mon_cry CRY_BULBASAUR,     0,  320 ; VENUSAUR
-	mon_cry CRY_CHARMANDER,   96,  192 ; CHARMANDER
+	mon_cry CRY_CHARMANDER,   96,  192 ; TORCHIC
 	mon_cry CRY_CHARMANDER,   32,  192 ; CHARMELEON
 	mon_cry CRY_CHARMANDER,    0,  256 ; CHARIZARD
-	mon_cry CRY_SQUIRTLE,     96,  192 ; SQUIRTLE
+	mon_cry CRY_SQUIRTLE,     96,  192 ; MUDKIP
 	mon_cry CRY_SQUIRTLE,     32,  192 ; WARTORTLE
 	mon_cry CRY_BLASTOISE,     0,  256 ; BLASTOISE
 	mon_cry CRY_CATERPIE,    128,  160 ; CATERPIE
@@ -24,7 +24,7 @@ PokemonCries::
 	mon_cry CRY_PIDGEY,      223,  132 ; PIDGEY
 	mon_cry CRY_PIDGEOTTO,    40,  320 ; PIDGEOTTO
 	mon_cry CRY_PIDGEOTTO,    17,  383 ; PIDGEOT
-	mon_cry CRY_RATTATA,       0,  256 ; RATTATA
+	mon_cry CRY_RATTATA,       0,  256 ; POOCHYENA
 	mon_cry CRY_RATTATA,      32,  383 ; RATICATE
 	mon_cry CRY_SPEAROW,       0,  256 ; SPEAROW
 	mon_cry CRY_FEAROW,       64,  288 ; FEAROW

@@ -1,12 +1,12 @@
 AnimationPointers:
 	table_width 2
-	dw BulbasaurAnimation
+	dw TreeckoAnimation
 	dw IvysaurAnimation
 	dw VenusaurAnimation
-	dw CharmanderAnimation
+	dw TorchicAnimation
 	dw CharmeleonAnimation
 	dw CharizardAnimation
-	dw SquirtleAnimation
+	dw MudkipAnimation
 	dw WartortleAnimation
 	dw BlastoiseAnimation
 	dw CaterpieAnimation
@@ -18,7 +18,7 @@ AnimationPointers:
 	dw PidgeyAnimation
 	dw PidgeottoAnimation
 	dw PidgeotAnimation
-	dw RattataAnimation
+	dw PoochyenaAnimation
 	dw RaticateAnimation
 	dw SpearowAnimation
 	dw FearowAnimation
