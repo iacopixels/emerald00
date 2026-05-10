@@ -39,11 +39,6 @@ INCLUDE "data/tilesets/ice_path_collision.asm"
 TilesetPlayersRoomGFX::
 INCBIN "gfx/tilesets/players_room.2bpp.lz"
 
-TilesetPlayersRoomMeta::
-INCBIN "data/tilesets/players_room_metatiles.bin"
-
-
-
 
 SECTION "Tileset Data 2", ROMX
 
@@ -454,3 +449,6 @@ INCBIN "data/tilesets/aerodactyl_word_room_attributes.bin"
 
 TilesetPlayersRoomColl::
 INCLUDE "data/tilesets/players_room_collision.asm"
+
+TilesetPlayersRoomMeta::
+INCBIN "data/tilesets/players_room_metatiles.bin"
