@@ -2,13 +2,13 @@
 
 EvosAttacksPointers::
 	table_width 2
-	dw BulbasaurEvosAttacks
+	dw TreeckoEvosAttacks
 	dw IvysaurEvosAttacks
 	dw VenusaurEvosAttacks
-	dw CharmanderEvosAttacks
+	dw TorchicEvosAttacks
 	dw CharmeleonEvosAttacks
 	dw CharizardEvosAttacks
-	dw SquirtleEvosAttacks
+	dw MudkipEvosAttacks
 	dw WartortleEvosAttacks
 	dw BlastoiseEvosAttacks
 	dw CaterpieEvosAttacks
@@ -20,7 +20,7 @@ EvosAttacksPointers::
 	dw PidgeyEvosAttacks
 	dw PidgeottoEvosAttacks
 	dw PidgeotEvosAttacks
-	dw RattataEvosAttacks
+	dw PoochyenaEvosAttacks
 	dw RaticateEvosAttacks
 	dw SpearowEvosAttacks
 	dw FearowEvosAttacks

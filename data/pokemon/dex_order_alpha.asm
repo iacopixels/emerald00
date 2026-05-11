@@ -18,13 +18,13 @@ AlphabeticalPokedexOrder:
 	db BELLSPROUT
 	db BLASTOISE
 	db BLISSEY
-	db BULBASAUR
+	db TREECKO
 	db BUTTERFREE
 	db CATERPIE
 	db CELEBI
 	db CHANSEY
 	db CHARIZARD
-	db CHARMANDER
+	db TORCHIC
 	db CHARMELEON
 	db CHIKORITA
 	db CHINCHOU
@@ -183,7 +183,7 @@ AlphabeticalPokedexOrder:
 	db RAIKOU
 	db RAPIDASH
 	db RATICATE
-	db RATTATA
+	db POOCHYENA
 	db REMORAID
 	db RHYDON
 	db RHYHORN
@@ -210,7 +210,7 @@ AlphabeticalPokedexOrder:
 	db SNUBBULL
 	db SPEAROW
 	db SPINARAK
-	db SQUIRTLE
+	db MUDKIP
 	db STANTLER
 	db STARMIE
 	db STARYU
