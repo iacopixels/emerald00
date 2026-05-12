@@ -217,7 +217,7 @@ NamingScreenJumptable:
 	ld a, e
 	cp LOW(KrisSpriteGFX)
 	jr nz, .not_kris
-	ld b, SPRITE_ANIM_OBJ_BLUE_WALK
+	ld b, SPRITE_ANIM_OBJ_RED_WALK
 .not_kris
 	ld a, b
 	depixel 4, 4, 4, 0

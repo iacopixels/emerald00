@@ -517,7 +517,6 @@ WillPic:             INCBIN "gfx/trainers/will.2bpp.lz"
 SchoolboyPic:        INCBIN "gfx/trainers/schoolboy.2bpp.lz"
 MagnemiteFrontpic:   INCBIN "gfx/pokemon/magnemite/front.animated.2bpp.lz"
 ErikaPic:            INCBIN "gfx/trainers/erika.2bpp.lz"
-JaninePic:           INCBIN "gfx/trainers/janine.2bpp.lz"
 MagnemiteBackpic:    INCBIN "gfx/pokemon/magnemite/back.2bpp.lz"
 
 
@@ -713,6 +712,7 @@ SECTION "Pics 19", ROMX
 
 TreeckoFrontpic:   INCBIN "gfx/pokemon/treecko/front.animated.2bpp.lz"
 MudkipFrontpic:    INCBIN "gfx/pokemon/mudkip/front.animated.2bpp.lz"
+JaninePic:           INCBIN "gfx/trainers/janine.2bpp.lz"
 
 
 INCBIN "gfx/pokemon/unown_k/front.animated.2bpp.lz"
