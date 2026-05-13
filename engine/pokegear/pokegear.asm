@@ -659,7 +659,7 @@ PokegearMap_InitPlayerIcon:
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .got_gender
-	ld b, SPRITE_ANIM_OBJ_BLUE_WALK
+	ld b, SPRITE_ANIM_OBJ_RED_WALK
 .got_gender
 	ld a, b
 	call InitSpriteAnimStruct
@@ -2539,8 +2539,7 @@ Pokedex_GetArea:
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .male
-	assert PAL_OW_RED + 1 == PAL_OW_BLUE
-	inc c
+	ld c, PAL_OW_RED
 .male
 	ld a, c
 	ld [hli], a ; attributes
@@ -2753,7 +2752,7 @@ TownMapPlayerIcon:
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .got_gender
-	ld b, SPRITE_ANIM_OBJ_BLUE_WALK ; Female
+	ld b, SPRITE_ANIM_OBJ_RED_WALK ; Female
 .got_gender
 	ld a, b
 	call InitSpriteAnimStruct
