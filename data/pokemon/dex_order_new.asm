@@ -28,7 +28,7 @@ NewPokedexOrder:
 	db WURMPLE
 	db METAPOD
 	db BUTTERFREE
-	db WEEDLE
+	db AZURILL
 	db KAKUNA
 	db BEEDRILL
 	db LEDYBA

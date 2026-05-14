@@ -346,16 +346,16 @@ JohtoGrassWildMons:
 	db 14, LEDYBA
 	db 13, TAILLOW
 	db 10, WURMPLE
-	db 10, WEEDLE
-	db 10, WEEDLE
+	db 10, AZURILL
+	db 10, AZURILL
 	; day
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
 	db 14, SUNKERN
 	db 13, TAILLOW
 	db 10, WURMPLE
-	db 10, WEEDLE
-	db 10, WEEDLE
+	db 10, AZURILL
+	db 10, AZURILL
 	; nite
 	db 12, PSYDUCK
 	db 13, HOOTHOOT
@@ -566,7 +566,7 @@ JohtoGrassWildMons:
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	db 5, WURMPLE
-	db 5, WEEDLE
+	db 5, AZURILL
 	db 7, METAPOD
 	db 7, KAKUNA
 	db 7, TAILLOW
@@ -574,7 +574,7 @@ JohtoGrassWildMons:
 	db 6, PARAS
 	; day
 	db 5, WURMPLE
-	db 5, WEEDLE
+	db 5, AZURILL
 	db 7, METAPOD
 	db 7, KAKUNA
 	db 7, TAILLOW
@@ -1269,7 +1269,7 @@ JohtoGrassWildMons:
 	db 3, WURMPLE
 	db 4, WURMPLE
 	db 4, TAILLOW
-	db 3, WEEDLE
+	db 3, AZURILL
 	db 4, HOPPIP
 	db 4, HOPPIP
 	; day
@@ -1277,7 +1277,7 @@ JohtoGrassWildMons:
 	db 3, WURMPLE
 	db 4, WURMPLE
 	db 4, TAILLOW
-	db 3, WEEDLE
+	db 3, AZURILL
 	db 4, HOPPIP
 	db 4, HOPPIP
 	; nite
@@ -1297,7 +1297,7 @@ JohtoGrassWildMons:
 	db 4, WURMPLE
 	db 5, BELLSPROUT
 	db 5, TAILLOW
-	db 4, WEEDLE
+	db 4, AZURILL
 	db 5, HOPPIP
 	db 5, HOPPIP
 	; day
@@ -1305,7 +1305,7 @@ JohtoGrassWildMons:
 	db 4, WURMPLE
 	db 5, BELLSPROUT
 	db 5, TAILLOW
-	db 4, WEEDLE
+	db 4, AZURILL
 	db 5, HOPPIP
 	db 5, HOPPIP
 	; nite

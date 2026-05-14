@@ -14,7 +14,7 @@ EvosAttacksPointers::
 	dw WurmpleEvosAttacks
 	dw MetapodEvosAttacks
 	dw ButterfreeEvosAttacks
-	dw WeedleEvosAttacks
+	dw AzurillEvosAttacks
 	dw KakunaEvosAttacks
 	dw BeedrillEvosAttacks
 	dw TaillowEvosAttacks

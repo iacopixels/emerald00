@@ -121,7 +121,7 @@ TreeMonSet_Forest:
 ; rare
 	db 50, HOOTHOOT,   10
 	db 15, WURMPLE,   10
-	db 15, WEEDLE,     10
+	db 15, AZURILL,     10
 	db 10, HOOTHOOT,   10
 	db  5, METAPOD,    10
 	db  5, KAKUNA,     10

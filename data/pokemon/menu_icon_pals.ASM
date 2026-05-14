@@ -17,7 +17,7 @@ MonMenuIconPals:
 	icon_pals RED, PURPLE  ; WURMPLE
 	icon_pals GREEN, BROWN  ; METAPOD
 	icon_pals BLUE, PINK    ; BUTTERFREE
-	icon_pals RED, PINK     ; WEEDLE
+	icon_pals BLUE, GREEN     ; AZURILL
 	icon_pals BROWN, GREEN  ; KAKUNA
 	icon_pals RED, TEAL     ; BEEDRILL
 	icon_pals BLUE, TEAL  ; TAILLOW

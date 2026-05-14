@@ -111,7 +111,7 @@ Pokered_MonIndices:
 	db PARAS
 	db POLIWHIRL
 	db POLIWRATH
-	db WEEDLE
+	db AZURILL
 	db KAKUNA
 	db BEEDRILL
 	db HOUNDOOM ; MISSINGNO.

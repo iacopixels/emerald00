@@ -14,7 +14,7 @@ IconPointers:
 	dw WurmpleIcon
 	dw MetapodIcon
 	dw ButterfreeIcon
-	dw WeedleIcon
+	dw AzurillIcon
 	dw KakunaIcon
 	dw BeedrillIcon
 	dw TaillowIcon

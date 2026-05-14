@@ -12,7 +12,7 @@ AnimationPointers:
 	dw WurmpleAnimation
 	dw MetapodAnimation
 	dw ButterfreeAnimation
-	dw WeedleAnimation
+	dw AzurillAnimation
 	dw KakunaAnimation
 	dw BeedrillAnimation
 	dw TaillowAnimation

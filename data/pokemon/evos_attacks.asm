@@ -190,8 +190,7 @@ ButterfreeEvosAttacks:
 	db 40, SAFEGUARD
 	db 0 ; no more level-up moves
 
-WeedleEvosAttacks:
-	db EVOLVE_LEVEL, 7, KAKUNA
+AzurillEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
 	db 1, STRING_SHOT

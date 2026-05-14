@@ -15,7 +15,7 @@ PokemonPicPointers::
 	dba_pics WurmpleFrontpic, WurmpleBackpic
 	dba_pics MetapodFrontpic, MetapodBackpic
 	dba_pics ButterfreeFrontpic, ButterfreeBackpic
-	dba_pics WeedleFrontpic, WeedleBackpic
+	dba_pics AzurillFrontpic, AzurillBackpic
 	dba_pics KakunaFrontpic, KakunaBackpic
 	dba_pics BeedrillFrontpic, BeedrillBackpic
 	dba_pics TaillowFrontpic, TaillowBackpic

@@ -12,7 +12,7 @@ FramesPointers:
 	dw WurmpleFrames
 	dw MetapodFrames
 	dw ButterfreeFrames
-	dw WeedleFrames
+	dw AzurillFrames
 	dw KakunaFrames
 	dw BeedrillFrames
 	dw TaillowFrames

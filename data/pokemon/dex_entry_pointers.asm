@@ -13,7 +13,7 @@ PokedexDataPointerTable:
 	dw WurmplePokedexEntry
 	dw MetapodPokedexEntry
 	dw ButterfreePokedexEntry
-	dw WeedlePokedexEntry
+	dw AzurillPokedexEntry
 	dw KakunaPokedexEntry
 	dw BeedrillPokedexEntry
 	dw TaillowPokedexEntry

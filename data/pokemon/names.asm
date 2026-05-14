@@ -12,7 +12,7 @@ PokemonNames::
 	dname "WURMPLE"
 	dname "METAPOD"
 	dname "BUTTERFREE"
-	dname "WEEDLE"
+	dname "AZURILL"
 	dname "KAKUNA"
 	dname "BEEDRILL"
 	dname "TAILLOW"

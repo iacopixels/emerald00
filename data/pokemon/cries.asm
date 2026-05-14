@@ -18,7 +18,7 @@ PokemonCries::
 	mon_cry CRY_CATERPIE,    128,  160 ; WURMPLE
 	mon_cry CRY_METAPOD,     204,  129 ; METAPOD
 	mon_cry CRY_CATERPIE,    119,  192 ; BUTTERFREE
-	mon_cry CRY_WEEDLE,      238,  129 ; WEEDLE
+	mon_cry CRY_WEEDLE,      238,  129 ; AZURILL
 	mon_cry CRY_BLASTOISE,   255,  129 ; KAKUNA
 	mon_cry CRY_BLASTOISE,    96,  256 ; BEEDRILL
 	mon_cry CRY_PIDGEY,      223,  132 ; TAILLOW

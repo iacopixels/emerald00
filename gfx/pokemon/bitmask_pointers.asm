@@ -12,7 +12,7 @@ BitmasksPointers:
 	dw WurmpleBitmasks
 	dw MetapodBitmasks
 	dw ButterfreeBitmasks
-	dw WeedleBitmasks
+	dw AzurillBitmasks
 	dw KakunaBitmasks
 	dw BeedrillBitmasks
 	dw TaillowBitmasks
