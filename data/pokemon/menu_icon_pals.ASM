@@ -14,7 +14,7 @@ MonMenuIconPals:
 	icon_pals BLUE, TEAL    ; MUDKIP
 	icon_pals BLUE, GREEN   ; WARTORTLE
 	icon_pals BLUE, TEAL    ; BLASTOISE
-	icon_pals GREEN, BROWN  ; CATERPIE
+	icon_pals RED, PURPLE  ; WURMPLE
 	icon_pals GREEN, BROWN  ; METAPOD
 	icon_pals BLUE, PINK    ; BUTTERFREE
 	icon_pals RED, PINK     ; WEEDLE

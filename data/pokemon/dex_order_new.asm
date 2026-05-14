@@ -25,7 +25,7 @@ NewPokedexOrder:
 	db PICHU
 	db PIKACHU
 	db RAICHU
-	db CATERPIE
+	db WURMPLE
 	db METAPOD
 	db BUTTERFREE
 	db WEEDLE

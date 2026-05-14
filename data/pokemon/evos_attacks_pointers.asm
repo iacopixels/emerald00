@@ -11,7 +11,7 @@ EvosAttacksPointers::
 	dw MudkipEvosAttacks
 	dw WartortleEvosAttacks
 	dw BlastoiseEvosAttacks
-	dw CaterpieEvosAttacks
+	dw WurmpleEvosAttacks
 	dw MetapodEvosAttacks
 	dw ButterfreeEvosAttacks
 	dw WeedleEvosAttacks

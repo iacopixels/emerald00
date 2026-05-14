@@ -28,7 +28,7 @@
 	const MUDKIP   ; 07
 	const WARTORTLE  ; 08
 	const BLASTOISE  ; 09
-	const CATERPIE   ; 0a
+	const WURMPLE   ; 0a
 	const METAPOD    ; 0b
 	const BUTTERFREE ; 0c
 	const WEEDLE     ; 0d

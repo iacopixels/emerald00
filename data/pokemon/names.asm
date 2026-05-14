@@ -9,7 +9,7 @@ PokemonNames::
 	dname "MUDKIP"
 	dname "WARTORTLE"
 	dname "BLASTOISE"
-	dname "CATERPIE"
+	dname "WURMPLE"
 	dname "METAPOD"
 	dname "BUTTERFREE"
 	dname "WEEDLE"

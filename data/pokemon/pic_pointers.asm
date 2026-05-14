@@ -12,7 +12,7 @@ PokemonPicPointers::
 	dba_pics MudkipFrontpic, MudkipBackpic
 	dba_pics WartortleFrontpic, WartortleBackpic
 	dba_pics BlastoiseFrontpic, BlastoiseBackpic
-	dba_pics CaterpieFrontpic, CaterpieBackpic
+	dba_pics WurmpleFrontpic, WurmpleBackpic
 	dba_pics MetapodFrontpic, MetapodBackpic
 	dba_pics ButterfreeFrontpic, ButterfreeBackpic
 	dba_pics WeedleFrontpic, WeedleBackpic

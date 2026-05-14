@@ -9,7 +9,7 @@ AnimationIdlePointers:
 	dw MudkipAnimationIdle
 	dw WartortleAnimationIdle
 	dw BlastoiseAnimationIdle
-	dw CaterpieAnimationIdle
+	dw WurmpleAnimationIdle
 	dw MetapodAnimationIdle
 	dw ButterfreeAnimationIdle
 	dw WeedleAnimationIdle

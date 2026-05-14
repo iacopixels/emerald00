@@ -9,7 +9,7 @@ BitmasksPointers:
 	dw MudkipBitmasks
 	dw WartortleBitmasks
 	dw BlastoiseBitmasks
-	dw CaterpieBitmasks
+	dw WurmpleBitmasks
 	dw MetapodBitmasks
 	dw ButterfreeBitmasks
 	dw WeedleBitmasks

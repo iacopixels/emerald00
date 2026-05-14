@@ -9,7 +9,7 @@ AnimationPointers:
 	dw MudkipAnimation
 	dw WartortleAnimation
 	dw BlastoiseAnimation
-	dw CaterpieAnimation
+	dw WurmpleAnimation
 	dw MetapodAnimation
 	dw ButterfreeAnimation
 	dw WeedleAnimation

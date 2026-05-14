@@ -9,7 +9,7 @@ FramesPointers:
 	dw MudkipFrames
 	dw WartortleFrames
 	dw BlastoiseFrames
-	dw CaterpieFrames
+	dw WurmpleFrames
 	dw MetapodFrames
 	dw ButterfreeFrames
 	dw WeedleFrames

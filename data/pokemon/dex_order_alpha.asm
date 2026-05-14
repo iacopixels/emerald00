@@ -20,7 +20,7 @@ AlphabeticalPokedexOrder:
 	db BLISSEY
 	db TREECKO
 	db BUTTERFREE
-	db CATERPIE
+	db WURMPLE
 	db CELEBI
 	db CHANSEY
 	db CHARIZARD

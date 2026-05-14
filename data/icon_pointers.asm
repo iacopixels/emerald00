@@ -11,7 +11,7 @@ IconPointers:
 	dw MudkipIcon
 	dw WartortleIcon
 	dw BlastoiseIcon
-	dw CaterpieIcon
+	dw WurmpleIcon
 	dw MetapodIcon
 	dw ButterfreeIcon
 	dw WeedleIcon
