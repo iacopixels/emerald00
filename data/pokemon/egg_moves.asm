@@ -426,14 +426,6 @@ TotodileEggMoves:
 	db ROCK_SLIDE
 	db -1 ; end
 
-SentretEggMoves:
-	db DOUBLE_EDGE
-	db PURSUIT
-	db SLASH
-	db FOCUS_ENERGY
-	db REVERSAL
-	db -1 ; end
-
 HoothootEggMoves:
 	db MIRROR_MOVE
 	db SUPERSONIC

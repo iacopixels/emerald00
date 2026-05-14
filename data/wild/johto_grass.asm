@@ -1238,17 +1238,17 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 2, TAILLOW
-	db 2, SENTRET
+	db 2, ZIGZAGOON
 	db 3, TAILLOW
-	db 3, SENTRET
+	db 3, ZIGZAGOON
 	db 2, POOCHYENA
 	db 3, HOPPIP
 	db 3, HOPPIP
 	; day
 	db 2, TAILLOW
-	db 2, SENTRET
+	db 2, ZIGZAGOON
 	db 3, TAILLOW
-	db 3, SENTRET
+	db 3, ZIGZAGOON
 	db 2, POOCHYENA
 	db 3, HOPPIP
 	db 3, HOPPIP
@@ -1573,7 +1573,7 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_43
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
 	db 15, FURRET
@@ -1581,7 +1581,7 @@ JohtoGrassWildMons:
 	db 17, FURRET
 	db 17, FURRET
 	; day
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
 	db 15, FURRET

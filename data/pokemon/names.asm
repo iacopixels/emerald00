@@ -160,7 +160,7 @@ PokemonNames::
 	dname "TOTODILE"
 	dname "CROCONAW"
 	dname "FERALIGATR"
-	dname "SENTRET"
+	dname "ZIGZAGOON"
 	dname "FURRET"
 	dname "HOOTHOOT"
 	dname "NOCTOWL"

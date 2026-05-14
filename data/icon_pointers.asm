@@ -162,7 +162,7 @@ IconPointers:
 	dw TotodileIcon
 	dw CroconawIcon
 	dw FeraligatrIcon
-	dw SentretIcon
+	dw ZigzagoonIcon
 	dw FurretIcon
 	dw HoothootIcon
 	dw NoctowlIcon

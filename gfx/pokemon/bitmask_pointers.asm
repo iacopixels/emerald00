@@ -160,7 +160,7 @@ BitmasksPointers:
 	dw TotodileBitmasks
 	dw CroconawBitmasks
 	dw FeraligatrBitmasks
-	dw SentretBitmasks
+	dw ZigzagoonBitmasks
 	dw FurretBitmasks
 	dw HoothootBitmasks
 	dw NoctowlBitmasks

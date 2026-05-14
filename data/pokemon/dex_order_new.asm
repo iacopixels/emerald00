@@ -20,7 +20,7 @@ NewPokedexOrder:
 	db NOCTOWL
 	db POOCHYENA
 	db RATICATE
-	db SENTRET
+	db ZIGZAGOON
 	db FURRET
 	db PICHU
 	db PIKACHU

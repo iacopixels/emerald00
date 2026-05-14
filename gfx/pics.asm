@@ -422,7 +422,7 @@ SECTION "Pics 14", ROMX
 
 SudowoodoBackpic:    INCBIN "gfx/pokemon/sudowoodo/back.2bpp.lz"
 FlaaffyBackpic:      INCBIN "gfx/pokemon/flaaffy/back.2bpp.lz"
-SentretFrontpic:     INCBIN "gfx/pokemon/sentret/front.animated.2bpp.lz"
+ZigzagoonBackpic:      INCBIN "gfx/pokemon/zigzagoon/back.2bpp.lz"
 TogeticBackpic:      INCBIN "gfx/pokemon/togetic/back.2bpp.lz"
 BugsyPic:            INCBIN "gfx/trainers/bugsy.2bpp.lz"
 MarowakBackpic:      INCBIN "gfx/pokemon/marowak/back.2bpp.lz"
@@ -620,7 +620,6 @@ AzumarillBackpic:    INCBIN "gfx/pokemon/azumarill/back.2bpp.lz"
 OctilleryBackpic:    INCBIN "gfx/pokemon/octillery/back.2bpp.lz"
 UnownSFrontpic:      INCBIN "gfx/pokemon/unown_s/front.animated.2bpp.lz"
 HorseaBackpic:       INCBIN "gfx/pokemon/horsea/back.2bpp.lz"
-SentretBackpic:      INCBIN "gfx/pokemon/sentret/back.2bpp.lz"
 UnownOFrontpic:      INCBIN "gfx/pokemon/unown_o/front.animated.2bpp.lz"
 UnownTFrontpic:      INCBIN "gfx/pokemon/unown_t/front.animated.2bpp.lz"
 WigglytuffBackpic:   INCBIN "gfx/pokemon/wigglytuff/back.2bpp.lz"
@@ -710,9 +709,11 @@ SECTION "Pics 19", ROMX
 
 ; Seems to be an accidental copy of the previous bank
 
-TreeckoFrontpic:   INCBIN "gfx/pokemon/treecko/front.animated.2bpp.lz"
-MudkipFrontpic:    INCBIN "gfx/pokemon/mudkip/front.animated.2bpp.lz"
+TreeckoFrontpic:     INCBIN "gfx/pokemon/treecko/front.animated.2bpp.lz"
+MudkipFrontpic:      INCBIN "gfx/pokemon/mudkip/front.animated.2bpp.lz"
 JaninePic:           INCBIN "gfx/trainers/janine.2bpp.lz"
+ZigzagoonFrontpic:   INCBIN "gfx/pokemon/zigzagoon/front.animated.2bpp.lz"
+
 
 
 INCBIN "gfx/pokemon/unown_k/front.animated.2bpp.lz"

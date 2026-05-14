@@ -175,7 +175,7 @@ KantoGrassWildMons:
 	; morn
 	db 2, TAILLOW
 	db 2, POOCHYENA
-	db 3, SENTRET
+	db 3, ZIGZAGOON
 	db 3, TAILLOW
 	db 6, FURRET
 	db 4, TAILLOW
@@ -183,7 +183,7 @@ KantoGrassWildMons:
 	; day
 	db 2, TAILLOW
 	db 2, POOCHYENA
-	db 3, SENTRET
+	db 3, ZIGZAGOON
 	db 3, TAILLOW
 	db 6, FURRET
 	db 4, TAILLOW

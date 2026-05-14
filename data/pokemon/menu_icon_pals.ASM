@@ -165,7 +165,7 @@ MonMenuIconPals:
 	icon_pals BLUE, GREEN   ; TOTODILE
 	icon_pals BLUE, GREEN   ; CROCONAW
 	icon_pals BLUE, TEAL    ; FERALIGATR
-	icon_pals BROWN, PINK   ; SENTRET
+	icon_pals BROWN, TEAL   ; ZIGZAGOON
 	icon_pals BROWN, PINK   ; FURRET
 	icon_pals BROWN, GREEN  ; HOOTHOOT
 	icon_pals BROWN, GREEN  ; NOCTOWL
