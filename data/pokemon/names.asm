@@ -15,7 +15,7 @@ PokemonNames::
 	dname "WEEDLE"
 	dname "KAKUNA"
 	dname "BEEDRILL"
-	dname "PIDGEY"
+	dname "TAILLOW"
 	dname "PIDGEOTTO"
 	dname "PIDGEOT"
 	dname "POOCHYENA"

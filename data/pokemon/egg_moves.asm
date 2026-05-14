@@ -10,12 +10,6 @@ SECTION "Egg Moves", ROMX
 
 INCLUDE "data/pokemon/egg_move_pointers.asm"
 
-PidgeyEggMoves:
-	db PURSUIT
-	db FAINT_ATTACK
-	db FORESIGHT
-	db -1 ; end
-
 SpearowEggMoves:
 	db FAINT_ATTACK
 	db FALSE_SWIPE

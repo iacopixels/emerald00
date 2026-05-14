@@ -20,7 +20,7 @@ MonMenuIconPals:
 	icon_pals RED, PINK     ; WEEDLE
 	icon_pals BROWN, GREEN  ; KAKUNA
 	icon_pals RED, TEAL     ; BEEDRILL
-	icon_pals BROWN, GREEN  ; PIDGEY
+	icon_pals BLUE, TEAL  ; TAILLOW
 	icon_pals BROWN, GREEN  ; PIDGEOTTO
 	icon_pals BROWN, GREEN  ; PIDGEOT
 	icon_pals GRAY, BROWN   ; POOCHYENA

@@ -161,7 +161,7 @@ AlphabeticalPokedexOrder:
 	db PICHU
 	db PIDGEOT
 	db PIDGEOTTO
-	db PIDGEY
+	db TAILLOW
 	db PIKACHU
 	db PILOSWINE
 	db PINECO

@@ -16,7 +16,7 @@ PokedexDataPointerTable:
 	dw WeedlePokedexEntry
 	dw KakunaPokedexEntry
 	dw BeedrillPokedexEntry
-	dw PidgeyPokedexEntry
+	dw TaillowPokedexEntry
 	dw PidgeottoPokedexEntry
 	dw PidgeotPokedexEntry
 	dw PoochyenaPokedexEntry

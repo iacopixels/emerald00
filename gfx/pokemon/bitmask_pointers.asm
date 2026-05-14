@@ -15,7 +15,7 @@ BitmasksPointers:
 	dw WeedleBitmasks
 	dw KakunaBitmasks
 	dw BeedrillBitmasks
-	dw PidgeyBitmasks
+	dw TaillowBitmasks
 	dw PidgeottoBitmasks
 	dw PidgeotBitmasks
 	dw PoochyenaBitmasks

@@ -17,7 +17,7 @@ IconPointers:
 	dw WeedleIcon
 	dw KakunaIcon
 	dw BeedrillIcon
-	dw PidgeyIcon
+	dw TaillowIcon
 	dw PidgeottoIcon
 	dw PidgeotIcon
 	dw PoochyenaIcon

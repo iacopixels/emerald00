@@ -15,7 +15,7 @@ AnimationPointers:
 	dw WeedleAnimation
 	dw KakunaAnimation
 	dw BeedrillAnimation
-	dw PidgeyAnimation
+	dw TaillowAnimation
 	dw PidgeottoAnimation
 	dw PidgeotAnimation
 	dw PoochyenaAnimation

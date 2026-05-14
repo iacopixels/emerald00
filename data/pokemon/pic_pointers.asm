@@ -18,7 +18,7 @@ PokemonPicPointers::
 	dba_pics WeedleFrontpic, WeedleBackpic
 	dba_pics KakunaFrontpic, KakunaBackpic
 	dba_pics BeedrillFrontpic, BeedrillBackpic
-	dba_pics PidgeyFrontpic, PidgeyBackpic
+	dba_pics TaillowFrontpic, TaillowBackpic
 	dba_pics PidgeottoFrontpic, PidgeottoBackpic
 	dba_pics PidgeotFrontpic, PidgeotBackpic
 	dba_pics PoochyenaFrontpic, PoochyenaBackpic

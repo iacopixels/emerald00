@@ -17,7 +17,7 @@ EvosAttacksPointers::
 	dw WeedleEvosAttacks
 	dw KakunaEvosAttacks
 	dw BeedrillEvosAttacks
-	dw PidgeyEvosAttacks
+	dw TaillowEvosAttacks
 	dw PidgeottoEvosAttacks
 	dw PidgeotEvosAttacks
 	dw PoochyenaEvosAttacks
