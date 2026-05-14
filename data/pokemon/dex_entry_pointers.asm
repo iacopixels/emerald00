@@ -10,13 +10,13 @@ PokedexDataPointerTable:
 	dw MudkipPokedexEntry
 	dw WartortlePokedexEntry
 	dw BlastoisePokedexEntry
-	dw CaterpiePokedexEntry
+	dw WurmplePokedexEntry
 	dw MetapodPokedexEntry
 	dw ButterfreePokedexEntry
-	dw WeedlePokedexEntry
+	dw AzurillPokedexEntry
 	dw KakunaPokedexEntry
 	dw BeedrillPokedexEntry
-	dw PidgeyPokedexEntry
+	dw TaillowPokedexEntry
 	dw PidgeottoPokedexEntry
 	dw PidgeotPokedexEntry
 	dw PoochyenaPokedexEntry
@@ -161,7 +161,7 @@ PokedexDataPointerTable:
 	dw TotodilePokedexEntry
 	dw CroconawPokedexEntry
 	dw FeraligatrPokedexEntry
-	dw SentretPokedexEntry
+	dw ZigzagoonPokedexEntry
 	dw FurretPokedexEntry
 	dw HoothootPokedexEntry
 	dw NoctowlPokedexEntry

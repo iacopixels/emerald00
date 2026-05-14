@@ -13,7 +13,7 @@ Trainers:
 FalknerGroup:
 	; FALKNER (1)
 	db "FALKNER@", TRAINERTYPE_MOVES
-	db  7, PIDGEY,     TACKLE, MUD_SLAP, NO_MOVE, NO_MOVE
+	db  7, TAILLOW,     TACKLE, MUD_SLAP, NO_MOVE, NO_MOVE
 	db  9, PIDGEOTTO,  TACKLE, MUD_SLAP, GUST, NO_MOVE
 	db -1 ; end
 
@@ -343,7 +343,7 @@ YoungsterGroup:
 
 	; YOUNGSTER (2)
 	db "MIKEY@", TRAINERTYPE_NORMAL
-	db  2, PIDGEY
+	db  2, TAILLOW
 	db  4, POOCHYENA
 	db -1 ; end
 
@@ -573,8 +573,8 @@ SchoolboyGroup:
 BirdKeeperGroup:
 	; BIRD_KEEPER (1)
 	db "ROD@", TRAINERTYPE_NORMAL
-	db  7, PIDGEY
-	db  7, PIDGEY
+	db  7, TAILLOW
+	db  7, TAILLOW
 	db -1 ; end
 
 	; BIRD_KEEPER (2)
@@ -584,17 +584,17 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (3)
 	db "BRYAN@", TRAINERTYPE_NORMAL
-	db 12, PIDGEY
+	db 12, TAILLOW
 	db 14, PIDGEOTTO
 	db -1 ; end
 
 	; BIRD_KEEPER (4)
 	db "THEO@", TRAINERTYPE_NORMAL
-	db 17, PIDGEY
-	db 15, PIDGEY
-	db 19, PIDGEY
-	db 15, PIDGEY
-	db 15, PIDGEY
+	db 17, TAILLOW
+	db 15, TAILLOW
+	db 19, TAILLOW
+	db 15, TAILLOW
+	db 15, TAILLOW
 	db -1 ; end
 
 	; BIRD_KEEPER (5)
@@ -619,7 +619,7 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (8)
 	db "HANK@", TRAINERTYPE_NORMAL
-	db 12, PIDGEY
+	db 12, TAILLOW
 	db 34, PIDGEOT
 	db -1 ; end
 
@@ -648,8 +648,8 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (13)
 	db "PETER@", TRAINERTYPE_NORMAL
-	db  6, PIDGEY
-	db  6, PIDGEY
+	db  6, TAILLOW
+	db  6, TAILLOW
 	db  8, SPEAROW
 	db -1 ; end
 
@@ -1065,9 +1065,9 @@ CooltrainerFGroup:
 BeautyGroup:
 	; BEAUTY (1)
 	db "VICTORIA@", TRAINERTYPE_NORMAL
-	db  9, SENTRET
-	db 13, SENTRET
-	db 17, SENTRET
+	db  9, ZIGZAGOON
+	db 13, ZIGZAGOON
+	db 17, ZIGZAGOON
 	db -1 ; end
 
 	; BEAUTY (2)
@@ -1078,12 +1078,12 @@ BeautyGroup:
 
 	; BEAUTY (3)
 	db "JULIE@", TRAINERTYPE_NORMAL
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db -1 ; end
 
 	; BEAUTY (4)
 	db "JACLYN@", TRAINERTYPE_NORMAL
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db -1 ; end
 
 	; BEAUTY (5)
@@ -1106,32 +1106,32 @@ BeautyGroup:
 
 	; BEAUTY (8)
 	db "CARLENE@", TRAINERTYPE_NORMAL
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db -1 ; end
 
 	; BEAUTY (9)
 	db "JESSICA@", TRAINERTYPE_NORMAL
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db -1 ; end
 
 	; BEAUTY (10)
 	db "RACHAEL@", TRAINERTYPE_NORMAL
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db -1 ; end
 
 	; BEAUTY (11)
 	db "ANGELICA@", TRAINERTYPE_NORMAL
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db -1 ; end
 
 	; BEAUTY (12)
 	db "KENDRA@", TRAINERTYPE_NORMAL
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db -1 ; end
 
 	; BEAUTY (13)
 	db "VERONICA@", TRAINERTYPE_NORMAL
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db -1 ; end
 
 	; BEAUTY (14)
@@ -1143,7 +1143,7 @@ BeautyGroup:
 
 	; BEAUTY (15)
 	db "THERESA@", TRAINERTYPE_NORMAL
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db -1 ; end
 
 	; BEAUTY (16)
@@ -1496,8 +1496,8 @@ SabrinaGroup:
 BugCatcherGroup:
 	; BUG_CATCHER (1)
 	db "DON@", TRAINERTYPE_NORMAL
-	db  3, CATERPIE
-	db  3, CATERPIE
+	db  3, WURMPLE
+	db  3, WURMPLE
 	db -1 ; end
 
 	; BUG_CATCHER (2)
@@ -1515,23 +1515,23 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (4)
 	db "WADE@", TRAINERTYPE_NORMAL
-	db  2, CATERPIE
-	db  2, CATERPIE
-	db  3, WEEDLE
-	db  2, CATERPIE
+	db  2, WURMPLE
+	db  2, WURMPLE
+	db  3, AZURILL
+	db  2, WURMPLE
 	db -1 ; end
 
 	; BUG_CATCHER (5)
 	db "BENNY@", TRAINERTYPE_NORMAL
-	db  7, WEEDLE
+	db  7, AZURILL
 	db  9, KAKUNA
 	db 12, BEEDRILL
 	db -1 ; end
 
 	; BUG_CATCHER (6)
 	db "AL@", TRAINERTYPE_NORMAL
-	db 12, CATERPIE
-	db 12, WEEDLE
+	db 12, WURMPLE
+	db 12, AZURILL
 	db -1 ; end
 
 	; BUG_CATCHER (7)
@@ -3410,11 +3410,11 @@ PokefanFGroup:
 
 	; POKEFANF (5)
 	db "GEORGIA@", TRAINERTYPE_ITEM
-	db 23, SENTRET,    BERRY
-	db 23, SENTRET,    BERRY
-	db 23, SENTRET,    BERRY
+	db 23, ZIGZAGOON,    BERRY
+	db 23, ZIGZAGOON,    BERRY
+	db 23, ZIGZAGOON,    BERRY
 	db 28, FURRET,     BERRY
-	db 23, SENTRET,    BERRY
+	db 23, ZIGZAGOON,    BERRY
 	db -1 ; end
 
 	; POKEFANF (6)

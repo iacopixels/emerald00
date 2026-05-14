@@ -9,13 +9,13 @@ FramesPointers:
 	dw MudkipFrames
 	dw WartortleFrames
 	dw BlastoiseFrames
-	dw CaterpieFrames
+	dw WurmpleFrames
 	dw MetapodFrames
 	dw ButterfreeFrames
-	dw WeedleFrames
+	dw AzurillFrames
 	dw KakunaFrames
 	dw BeedrillFrames
-	dw PidgeyFrames
+	dw TaillowFrames
 	dw PidgeottoFrames
 	dw PidgeotFrames
 	dw PoochyenaFrames
@@ -160,7 +160,7 @@ FramesPointers:
 	dw TotodileFrames
 	dw CroconawFrames
 	dw FeraligatrFrames
-	dw SentretFrames
+	dw ZigzagoonFrames
 	dw FurretFrames
 	dw HoothootFrames
 	dw NoctowlFrames

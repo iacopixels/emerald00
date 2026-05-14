@@ -344,18 +344,18 @@ JohtoGrassWildMons:
 	db 12, NIDORAN_M
 	db 12, NIDORAN_F
 	db 14, LEDYBA
-	db 13, PIDGEY
-	db 10, CATERPIE
-	db 10, WEEDLE
-	db 10, WEEDLE
+	db 13, TAILLOW
+	db 10, WURMPLE
+	db 10, AZURILL
+	db 10, AZURILL
 	; day
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
 	db 14, SUNKERN
-	db 13, PIDGEY
-	db 10, CATERPIE
-	db 10, WEEDLE
-	db 10, WEEDLE
+	db 13, TAILLOW
+	db 10, WURMPLE
+	db 10, AZURILL
+	db 10, AZURILL
 	; nite
 	db 12, PSYDUCK
 	db 13, HOOTHOOT
@@ -565,19 +565,19 @@ JohtoGrassWildMons:
 	def_grass_wildmons ILEX_FOREST
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 5, CATERPIE
-	db 5, WEEDLE
+	db 5, WURMPLE
+	db 5, AZURILL
 	db 7, METAPOD
 	db 7, KAKUNA
-	db 7, PIDGEY
+	db 7, TAILLOW
 	db 6, PARAS
 	db 6, PARAS
 	; day
-	db 5, CATERPIE
-	db 5, WEEDLE
+	db 5, WURMPLE
+	db 5, AZURILL
 	db 7, METAPOD
 	db 7, KAKUNA
-	db 7, PIDGEY
+	db 7, TAILLOW
 	db 6, PARAS
 	db 6, PARAS
 	; nite
@@ -1237,18 +1237,18 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_29
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY
-	db 2, SENTRET
-	db 3, PIDGEY
-	db 3, SENTRET
+	db 2, TAILLOW
+	db 2, ZIGZAGOON
+	db 3, TAILLOW
+	db 3, ZIGZAGOON
 	db 2, POOCHYENA
 	db 3, HOPPIP
 	db 3, HOPPIP
 	; day
-	db 2, PIDGEY
-	db 2, SENTRET
-	db 3, PIDGEY
-	db 3, SENTRET
+	db 2, TAILLOW
+	db 2, ZIGZAGOON
+	db 3, TAILLOW
+	db 3, ZIGZAGOON
 	db 2, POOCHYENA
 	db 3, HOPPIP
 	db 3, HOPPIP
@@ -1266,18 +1266,18 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 3, LEDYBA
-	db 3, CATERPIE
-	db 4, CATERPIE
-	db 4, PIDGEY
-	db 3, WEEDLE
+	db 3, WURMPLE
+	db 4, WURMPLE
+	db 4, TAILLOW
+	db 3, AZURILL
 	db 4, HOPPIP
 	db 4, HOPPIP
 	; day
-	db 3, PIDGEY
-	db 3, CATERPIE
-	db 4, CATERPIE
-	db 4, PIDGEY
-	db 3, WEEDLE
+	db 3, TAILLOW
+	db 3, WURMPLE
+	db 4, WURMPLE
+	db 4, TAILLOW
+	db 3, AZURILL
 	db 4, HOPPIP
 	db 4, HOPPIP
 	; nite
@@ -1294,18 +1294,18 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 4, LEDYBA
-	db 4, CATERPIE
+	db 4, WURMPLE
 	db 5, BELLSPROUT
-	db 5, PIDGEY
-	db 4, WEEDLE
+	db 5, TAILLOW
+	db 4, AZURILL
 	db 5, HOPPIP
 	db 5, HOPPIP
 	; day
-	db 4, PIDGEY
-	db 4, CATERPIE
+	db 4, TAILLOW
+	db 4, WURMPLE
 	db 5, BELLSPROUT
-	db 5, PIDGEY
-	db 4, WEEDLE
+	db 5, TAILLOW
+	db 4, AZURILL
 	db 5, HOPPIP
 	db 5, HOPPIP
 	; nite
@@ -1325,7 +1325,7 @@ JohtoGrassWildMons:
 	db 5, POOCHYENA
 	db 7, BELLSPROUT
 	db 6, HOPPIP
-	db 7, PIDGEY
+	db 7, TAILLOW
 	db 7, HOPPIP
 	db 7, HOPPIP
 	; day
@@ -1333,7 +1333,7 @@ JohtoGrassWildMons:
 	db 5, POOCHYENA
 	db 7, BELLSPROUT
 	db 6, HOPPIP
-	db 7, PIDGEY
+	db 7, TAILLOW
 	db 7, HOPPIP
 	db 7, HOPPIP
 	; nite
@@ -1379,7 +1379,7 @@ JohtoGrassWildMons:
 	; morn
 	db 10, SNUBBULL
 	db 11, POOCHYENA
-	db 12, PIDGEY
+	db 12, TAILLOW
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO
@@ -1387,7 +1387,7 @@ JohtoGrassWildMons:
 	; day
 	db 10, SNUBBULL
 	db 11, POOCHYENA
-	db 12, PIDGEY
+	db 12, TAILLOW
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO
@@ -1406,7 +1406,7 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 12, SNUBBULL
-	db 14, PIDGEY
+	db 14, TAILLOW
 	db 13, GROWLITHE
 	db 10, ABRA
 	db 12, JIGGLYPUFF
@@ -1414,7 +1414,7 @@ JohtoGrassWildMons:
 	db 12, YANMA
 	; day
 	db 12, SNUBBULL
-	db 14, PIDGEY
+	db 14, TAILLOW
 	db 13, GROWLITHE
 	db 10, ABRA
 	db 12, JIGGLYPUFF
@@ -1434,20 +1434,20 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 4, LEDYBA
-	db 4, PIDGEY
+	db 4, TAILLOW
 	db 5, BELLSPROUT
 	db 5, GROWLITHE
-	db 5, PIDGEY
-	db 6, PIDGEY
-	db 6, PIDGEY
+	db 5, TAILLOW
+	db 6, TAILLOW
+	db 6, TAILLOW
 	; day
-	db 4, PIDGEY
-	db 4, PIDGEY
+	db 4, TAILLOW
+	db 4, TAILLOW
 	db 5, BELLSPROUT
 	db 5, GROWLITHE
-	db 5, PIDGEY
-	db 6, PIDGEY
-	db 6, PIDGEY
+	db 5, TAILLOW
+	db 6, TAILLOW
+	db 6, TAILLOW
 	; nite
 	db 4, SPINARAK
 	db 4, HOOTHOOT
@@ -1463,19 +1463,19 @@ JohtoGrassWildMons:
 	; morn
 	db 13, LEDYBA
 	db 14, GROWLITHE
-	db 15, PIDGEY
+	db 15, TAILLOW
 	db 16, GROWLITHE
 	db 15, PIDGEOTTO
 	db 15, LEDIAN
 	db 15, LEDIAN
 	; day
-	db 13, PIDGEY
+	db 13, TAILLOW
 	db 14, GROWLITHE
-	db 15, PIDGEY
+	db 15, TAILLOW
 	db 16, GROWLITHE
 	db 15, PIDGEOTTO
-	db 15, PIDGEY
-	db 15, PIDGEY
+	db 15, TAILLOW
+	db 15, TAILLOW
 	; nite
 	db 13, SPINARAK
 	db 14, STANTLER
@@ -1573,7 +1573,7 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_43
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
 	db 15, FURRET
@@ -1581,7 +1581,7 @@ JohtoGrassWildMons:
 	db 17, FURRET
 	db 17, FURRET
 	; day
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
 	db 15, FURRET

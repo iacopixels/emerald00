@@ -163,8 +163,7 @@ BlastoiseEvosAttacks:
 	db 68, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
-CaterpieEvosAttacks:
-	db EVOLVE_LEVEL, 7, METAPOD
+WurmpleEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, STRING_SHOT
@@ -191,8 +190,7 @@ ButterfreeEvosAttacks:
 	db 40, SAFEGUARD
 	db 0 ; no more level-up moves
 
-WeedleEvosAttacks:
-	db EVOLVE_LEVEL, 7, KAKUNA
+AzurillEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
 	db 1, STRING_SHOT
@@ -217,8 +215,7 @@ BeedrillEvosAttacks:
 	db 40, AGILITY
 	db 0 ; no more level-up moves
 
-PidgeyEvosAttacks:
-	db EVOLVE_LEVEL, 18, PIDGEOTTO
+TaillowEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 5, SAND_ATTACK
@@ -2184,8 +2181,7 @@ FeraligatrEvosAttacks:
 	db 58, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
-SentretEvosAttacks:
-	db EVOLVE_LEVEL, 15, FURRET
+ZigzagoonEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 5, DEFENSE_CURL

@@ -12,13 +12,13 @@ PokemonPicPointers::
 	dba_pics MudkipFrontpic, MudkipBackpic
 	dba_pics WartortleFrontpic, WartortleBackpic
 	dba_pics BlastoiseFrontpic, BlastoiseBackpic
-	dba_pics CaterpieFrontpic, CaterpieBackpic
+	dba_pics WurmpleFrontpic, WurmpleBackpic
 	dba_pics MetapodFrontpic, MetapodBackpic
 	dba_pics ButterfreeFrontpic, ButterfreeBackpic
-	dba_pics WeedleFrontpic, WeedleBackpic
+	dba_pics AzurillFrontpic, AzurillBackpic
 	dba_pics KakunaFrontpic, KakunaBackpic
 	dba_pics BeedrillFrontpic, BeedrillBackpic
-	dba_pics PidgeyFrontpic, PidgeyBackpic
+	dba_pics TaillowFrontpic, TaillowBackpic
 	dba_pics PidgeottoFrontpic, PidgeottoBackpic
 	dba_pics PidgeotFrontpic, PidgeotBackpic
 	dba_pics PoochyenaFrontpic, PoochyenaBackpic
@@ -163,7 +163,7 @@ PokemonPicPointers::
 	dba_pics TotodileFrontpic, TotodileBackpic
 	dba_pics CroconawFrontpic, CroconawBackpic
 	dba_pics FeraligatrFrontpic, FeraligatrBackpic
-	dba_pics SentretFrontpic, SentretBackpic
+	dba_pics ZigzagoonFrontpic, ZigzagoonBackpic
 	dba_pics FurretFrontpic, FurretBackpic
 	dba_pics HoothootFrontpic, HoothootBackpic
 	dba_pics NoctowlFrontpic, NoctowlBackpic

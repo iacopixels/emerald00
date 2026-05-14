@@ -9,13 +9,13 @@ BitmasksPointers:
 	dw MudkipBitmasks
 	dw WartortleBitmasks
 	dw BlastoiseBitmasks
-	dw CaterpieBitmasks
+	dw WurmpleBitmasks
 	dw MetapodBitmasks
 	dw ButterfreeBitmasks
-	dw WeedleBitmasks
+	dw AzurillBitmasks
 	dw KakunaBitmasks
 	dw BeedrillBitmasks
-	dw PidgeyBitmasks
+	dw TaillowBitmasks
 	dw PidgeottoBitmasks
 	dw PidgeotBitmasks
 	dw PoochyenaBitmasks
@@ -160,7 +160,7 @@ BitmasksPointers:
 	dw TotodileBitmasks
 	dw CroconawBitmasks
 	dw FeraligatrBitmasks
-	dw SentretBitmasks
+	dw ZigzagoonBitmasks
 	dw FurretBitmasks
 	dw HoothootBitmasks
 	dw NoctowlBitmasks

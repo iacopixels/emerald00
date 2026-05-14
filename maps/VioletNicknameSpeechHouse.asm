@@ -18,7 +18,7 @@ VioletNicknameSpeechHouseBirdScript:
 	faceplayer
 	opentext
 	writetext VioletNicknameSpeechHouseBirdText
-	cry PIDGEY
+	cry TAILLOW
 	waitbutton
 	closetext
 	end

@@ -15,13 +15,13 @@ PokemonCries::
 	mon_cry CRY_SQUIRTLE,     96,  192 ; MUDKIP
 	mon_cry CRY_SQUIRTLE,     32,  192 ; WARTORTLE
 	mon_cry CRY_BLASTOISE,     0,  256 ; BLASTOISE
-	mon_cry CRY_CATERPIE,    128,  160 ; CATERPIE
+	mon_cry CRY_CATERPIE,    128,  160 ; WURMPLE
 	mon_cry CRY_METAPOD,     204,  129 ; METAPOD
 	mon_cry CRY_CATERPIE,    119,  192 ; BUTTERFREE
-	mon_cry CRY_WEEDLE,      238,  129 ; WEEDLE
+	mon_cry CRY_WEEDLE,      238,  129 ; AZURILL
 	mon_cry CRY_BLASTOISE,   255,  129 ; KAKUNA
 	mon_cry CRY_BLASTOISE,    96,  256 ; BEEDRILL
-	mon_cry CRY_PIDGEY,      223,  132 ; PIDGEY
+	mon_cry CRY_PIDGEY,      223,  132 ; TAILLOW
 	mon_cry CRY_PIDGEOTTO,    40,  320 ; PIDGEOTTO
 	mon_cry CRY_PIDGEOTTO,    17,  383 ; PIDGEOT
 	mon_cry CRY_RATTATA,       0,  256 ; POOCHYENA
@@ -166,7 +166,7 @@ PokemonCries::
 	mon_cry CRY_TOTODILE,   1132,  232 ; TOTODILE
 	mon_cry CRY_TOTODILE,   1088,  272 ; CROCONAW
 	mon_cry CRY_TOTODILE,   1020,  384 ; FERALIGATR
-	mon_cry CRY_SENTRET,     138,  184 ; SENTRET
+	mon_cry CRY_SENTRET,     138,  184 ; ZIGZAGOON
 	mon_cry CRY_SENTRET,     107,  258 ; FURRET
 	mon_cry CRY_HOOTHOOT,    145,  216 ; HOOTHOOT
 	mon_cry CRY_HOOTHOOT,      0,  416 ; NOCTOWL

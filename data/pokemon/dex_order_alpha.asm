@@ -20,7 +20,7 @@ AlphabeticalPokedexOrder:
 	db BLISSEY
 	db TREECKO
 	db BUTTERFREE
-	db CATERPIE
+	db WURMPLE
 	db CELEBI
 	db CHANSEY
 	db CHARIZARD
@@ -161,7 +161,7 @@ AlphabeticalPokedexOrder:
 	db PICHU
 	db PIDGEOT
 	db PIDGEOTTO
-	db PIDGEY
+	db TAILLOW
 	db PIKACHU
 	db PILOSWINE
 	db PINECO
@@ -194,7 +194,7 @@ AlphabeticalPokedexOrder:
 	db SEADRA
 	db SEAKING
 	db SEEL
-	db SENTRET
+	db ZIGZAGOON
 	db SHELLDER
 	db SHUCKLE
 	db SKARMORY
@@ -243,7 +243,7 @@ AlphabeticalPokedexOrder:
 	db VOLTORB
 	db VULPIX
 	db WARTORTLE
-	db WEEDLE
+	db AZURILL
 	db WEEPINBELL
 	db WEEZING
 	db WIGGLYTUFF

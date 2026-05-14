@@ -9,13 +9,13 @@ AnimationPointers:
 	dw MudkipAnimation
 	dw WartortleAnimation
 	dw BlastoiseAnimation
-	dw CaterpieAnimation
+	dw WurmpleAnimation
 	dw MetapodAnimation
 	dw ButterfreeAnimation
-	dw WeedleAnimation
+	dw AzurillAnimation
 	dw KakunaAnimation
 	dw BeedrillAnimation
-	dw PidgeyAnimation
+	dw TaillowAnimation
 	dw PidgeottoAnimation
 	dw PidgeotAnimation
 	dw PoochyenaAnimation
@@ -160,7 +160,7 @@ AnimationPointers:
 	dw TotodileAnimation
 	dw CroconawAnimation
 	dw FeraligatrAnimation
-	dw SentretAnimation
+	dw ZigzagoonAnimation
 	dw FurretAnimation
 	dw HoothootAnimation
 	dw NoctowlAnimation

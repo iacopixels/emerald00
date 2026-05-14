@@ -173,21 +173,21 @@ KantoGrassWildMons:
 	def_grass_wildmons ROUTE_1
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY
+	db 2, TAILLOW
 	db 2, POOCHYENA
-	db 3, SENTRET
-	db 3, PIDGEY
+	db 3, ZIGZAGOON
+	db 3, TAILLOW
 	db 6, FURRET
-	db 4, PIDGEY
-	db 4, PIDGEY
+	db 4, TAILLOW
+	db 4, TAILLOW
 	; day
-	db 2, PIDGEY
+	db 2, TAILLOW
 	db 2, POOCHYENA
-	db 3, SENTRET
-	db 3, PIDGEY
+	db 3, ZIGZAGOON
+	db 3, TAILLOW
 	db 6, FURRET
-	db 4, PIDGEY
-	db 4, PIDGEY
+	db 4, TAILLOW
+	db 4, TAILLOW
 	; nite
 	db 2, HOOTHOOT
 	db 2, POOCHYENA
@@ -201,17 +201,17 @@ KantoGrassWildMons:
 	def_grass_wildmons ROUTE_2
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 3, CATERPIE
+	db 3, WURMPLE
 	db 3, LEDYBA
-	db 5, PIDGEY
+	db 5, TAILLOW
 	db 7, BUTTERFREE
 	db 7, LEDIAN
 	db 4, PIKACHU
 	db 4, PIKACHU
 	; day
-	db 3, CATERPIE
-	db 3, PIDGEY
-	db 5, PIDGEY
+	db 3, WURMPLE
+	db 3, TAILLOW
+	db 5, TAILLOW
 	db 7, BUTTERFREE
 	db 7, PIDGEOTTO
 	db 4, PIKACHU
@@ -285,7 +285,7 @@ KantoGrassWildMons:
 	def_grass_wildmons ROUTE_5
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 13, PIDGEY
+	db 13, TAILLOW
 	db 13, SNUBBULL
 	db 15, PIDGEOTTO
 	db 12, ABRA
@@ -293,7 +293,7 @@ KantoGrassWildMons:
 	db 14, ABRA
 	db 14, ABRA
 	; day
-	db 13, PIDGEY
+	db 13, TAILLOW
 	db 13, SNUBBULL
 	db 15, PIDGEOTTO
 	db 12, ABRA
@@ -705,17 +705,17 @@ KantoGrassWildMons:
 	def_grass_wildmons ROUTE_24
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 8, CATERPIE
-	db 10, CATERPIE
+	db 8, WURMPLE
+	db 10, WURMPLE
 	db 12, METAPOD
 	db 12, ABRA
 	db 10, BELLSPROUT
 	db 14, BUTTERFREE
 	db 14, BUTTERFREE
 	; day
-	db 8, CATERPIE
+	db 8, WURMPLE
 	db 12, SUNKERN
-	db 10, CATERPIE
+	db 10, WURMPLE
 	db 12, ABRA
 	db 10, BELLSPROUT
 	db 14, BUTTERFREE
@@ -733,16 +733,16 @@ KantoGrassWildMons:
 	def_grass_wildmons ROUTE_25
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 10, CATERPIE
-	db 10, PIDGEY
+	db 10, WURMPLE
+	db 10, TAILLOW
 	db 12, PIDGEOTTO
 	db 12, METAPOD
 	db 10, BELLSPROUT
 	db 14, BUTTERFREE
 	db 14, BUTTERFREE
 	; day
-	db 10, CATERPIE
-	db 10, PIDGEY
+	db 10, WURMPLE
+	db 10, TAILLOW
 	db 12, PIDGEOTTO
 	db 12, METAPOD
 	db 10, BELLSPROUT

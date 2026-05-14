@@ -9,13 +9,13 @@ AnimationIdlePointers:
 	dw MudkipAnimationIdle
 	dw WartortleAnimationIdle
 	dw BlastoiseAnimationIdle
-	dw CaterpieAnimationIdle
+	dw WurmpleAnimationIdle
 	dw MetapodAnimationIdle
 	dw ButterfreeAnimationIdle
-	dw WeedleAnimationIdle
+	dw AzurillAnimationIdle
 	dw KakunaAnimationIdle
 	dw BeedrillAnimationIdle
-	dw PidgeyAnimationIdle
+	dw TaillowAnimationIdle
 	dw PidgeottoAnimationIdle
 	dw PidgeotAnimationIdle
 	dw PoochyenaAnimationIdle
@@ -160,7 +160,7 @@ AnimationIdlePointers:
 	dw TotodileAnimationIdle
 	dw CroconawAnimationIdle
 	dw FeraligatrAnimationIdle
-	dw SentretAnimationIdle
+	dw ZigzagoonAnimationIdle
 	dw FurretAnimationIdle
 	dw HoothootAnimationIdle
 	dw NoctowlAnimationIdle

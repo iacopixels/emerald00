@@ -28,13 +28,13 @@
 	const MUDKIP   ; 07
 	const WARTORTLE  ; 08
 	const BLASTOISE  ; 09
-	const CATERPIE   ; 0a
+	const WURMPLE   ; 0a
 	const METAPOD    ; 0b
 	const BUTTERFREE ; 0c
-	const WEEDLE     ; 0d
+	const AZURILL     ; 0d
 	const KAKUNA     ; 0e
 	const BEEDRILL   ; 0f
-	const PIDGEY     ; 10
+	const TAILLOW     ; 10
 	const PIDGEOTTO  ; 11
 	const PIDGEOT    ; 12
 	const POOCHYENA    ; 13
@@ -180,7 +180,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const TOTODILE   ; 9e
 	const CROCONAW   ; 9f
 	const FERALIGATR ; a0
-	const SENTRET    ; a1
+	const ZIGZAGOON    ; a1
 	const FURRET     ; a2
 	const HOOTHOOT   ; a3
 	const NOCTOWL    ; a4

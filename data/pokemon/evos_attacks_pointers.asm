@@ -11,13 +11,13 @@ EvosAttacksPointers::
 	dw MudkipEvosAttacks
 	dw WartortleEvosAttacks
 	dw BlastoiseEvosAttacks
-	dw CaterpieEvosAttacks
+	dw WurmpleEvosAttacks
 	dw MetapodEvosAttacks
 	dw ButterfreeEvosAttacks
-	dw WeedleEvosAttacks
+	dw AzurillEvosAttacks
 	dw KakunaEvosAttacks
 	dw BeedrillEvosAttacks
-	dw PidgeyEvosAttacks
+	dw TaillowEvosAttacks
 	dw PidgeottoEvosAttacks
 	dw PidgeotEvosAttacks
 	dw PoochyenaEvosAttacks
@@ -162,7 +162,7 @@ EvosAttacksPointers::
 	dw TotodileEvosAttacks
 	dw CroconawEvosAttacks
 	dw FeraligatrEvosAttacks
-	dw SentretEvosAttacks
+	dw ZigzagoonEvosAttacks
 	dw FurretEvosAttacks
 	dw HoothootEvosAttacks
 	dw NoctowlEvosAttacks

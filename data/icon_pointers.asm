@@ -11,13 +11,13 @@ IconPointers:
 	dw MudkipIcon
 	dw WartortleIcon
 	dw BlastoiseIcon
-	dw CaterpieIcon
+	dw WurmpleIcon
 	dw MetapodIcon
 	dw ButterfreeIcon
-	dw WeedleIcon
+	dw AzurillIcon
 	dw KakunaIcon
 	dw BeedrillIcon
-	dw PidgeyIcon
+	dw TaillowIcon
 	dw PidgeottoIcon
 	dw PidgeotIcon
 	dw PoochyenaIcon
@@ -162,7 +162,7 @@ IconPointers:
 	dw TotodileIcon
 	dw CroconawIcon
 	dw FeraligatrIcon
-	dw SentretIcon
+	dw ZigzagoonIcon
 	dw FurretIcon
 	dw HoothootIcon
 	dw NoctowlIcon

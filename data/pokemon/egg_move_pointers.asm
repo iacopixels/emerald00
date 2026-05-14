@@ -15,7 +15,7 @@ EggMovePointers::
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw PidgeyEggMoves
+	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
@@ -160,7 +160,7 @@ EggMovePointers::
 	dw TotodileEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw SentretEggMoves
+	dw NoEggMoves
 	dw NoEggMoves
 	dw HoothootEggMoves
 	dw NoEggMoves

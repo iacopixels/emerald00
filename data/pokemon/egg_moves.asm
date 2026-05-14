@@ -10,12 +10,6 @@ SECTION "Egg Moves", ROMX
 
 INCLUDE "data/pokemon/egg_move_pointers.asm"
 
-PidgeyEggMoves:
-	db PURSUIT
-	db FAINT_ATTACK
-	db FORESIGHT
-	db -1 ; end
-
 SpearowEggMoves:
 	db FAINT_ATTACK
 	db FALSE_SWIPE
@@ -430,14 +424,6 @@ TotodileEggMoves:
 	db ANCIENTPOWER
 	db RAZOR_WIND
 	db ROCK_SLIDE
-	db -1 ; end
-
-SentretEggMoves:
-	db DOUBLE_EDGE
-	db PURSUIT
-	db SLASH
-	db FOCUS_ENERGY
-	db REVERSAL
 	db -1 ; end
 
 HoothootEggMoves:

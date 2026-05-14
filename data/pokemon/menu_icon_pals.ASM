@@ -14,13 +14,13 @@ MonMenuIconPals:
 	icon_pals BLUE, TEAL    ; MUDKIP
 	icon_pals BLUE, GREEN   ; WARTORTLE
 	icon_pals BLUE, TEAL    ; BLASTOISE
-	icon_pals GREEN, BROWN  ; CATERPIE
+	icon_pals RED, PURPLE  ; WURMPLE
 	icon_pals GREEN, BROWN  ; METAPOD
 	icon_pals BLUE, PINK    ; BUTTERFREE
-	icon_pals RED, PINK     ; WEEDLE
+	icon_pals BLUE, GREEN     ; AZURILL
 	icon_pals BROWN, GREEN  ; KAKUNA
 	icon_pals RED, TEAL     ; BEEDRILL
-	icon_pals BROWN, GREEN  ; PIDGEY
+	icon_pals BLUE, TEAL  ; TAILLOW
 	icon_pals BROWN, GREEN  ; PIDGEOTTO
 	icon_pals BROWN, GREEN  ; PIDGEOT
 	icon_pals GRAY, BROWN   ; POOCHYENA
@@ -165,7 +165,7 @@ MonMenuIconPals:
 	icon_pals BLUE, GREEN   ; TOTODILE
 	icon_pals BLUE, GREEN   ; CROCONAW
 	icon_pals BLUE, TEAL    ; FERALIGATR
-	icon_pals BROWN, PINK   ; SENTRET
+	icon_pals BROWN, TEAL   ; ZIGZAGOON
 	icon_pals BROWN, PINK   ; FURRET
 	icon_pals BROWN, GREEN  ; HOOTHOOT
 	icon_pals BROWN, GREEN  ; NOCTOWL

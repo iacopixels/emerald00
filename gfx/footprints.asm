@@ -31,22 +31,22 @@ INCBIN "gfx/footprints/mudkip.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/wartortle.1bpp",  footprint_bottom
 ; 009-016 top halves
 INCBIN "gfx/footprints/blastoise.1bpp",  footprint_top
-INCBIN "gfx/footprints/caterpie.1bpp",   footprint_top
+INCBIN "gfx/footprints/wurmple.1bpp",   footprint_top
 INCBIN "gfx/footprints/metapod.1bpp",    footprint_top
 INCBIN "gfx/footprints/butterfree.1bpp", footprint_top
-INCBIN "gfx/footprints/weedle.1bpp",     footprint_top
+INCBIN "gfx/footprints/azurill.1bpp",     footprint_top
 INCBIN "gfx/footprints/kakuna.1bpp",     footprint_top
 INCBIN "gfx/footprints/beedrill.1bpp",   footprint_top
-INCBIN "gfx/footprints/pidgey.1bpp",     footprint_top
+INCBIN "gfx/footprints/taillow.1bpp",     footprint_top
 ; 009-016 bottom halves
 INCBIN "gfx/footprints/blastoise.1bpp",  footprint_bottom
-INCBIN "gfx/footprints/caterpie.1bpp",   footprint_bottom
+INCBIN "gfx/footprints/wurmple.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/metapod.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/butterfree.1bpp", footprint_bottom
-INCBIN "gfx/footprints/weedle.1bpp",     footprint_bottom
+INCBIN "gfx/footprints/azurill.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/kakuna.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/beedrill.1bpp",   footprint_bottom
-INCBIN "gfx/footprints/pidgey.1bpp",     footprint_bottom
+INCBIN "gfx/footprints/taillow.1bpp",     footprint_bottom
 ; 017-024 top halves
 INCBIN "gfx/footprints/pidgeotto.1bpp",  footprint_top
 INCBIN "gfx/footprints/pidgeot.1bpp",    footprint_top
@@ -372,7 +372,7 @@ INCBIN "gfx/footprints/totodile.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/croconaw.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/feraligatr.1bpp", footprint_bottom
 ; 161-168 top halves
-INCBIN "gfx/footprints/sentret.1bpp",    footprint_top
+INCBIN "gfx/footprints/zigzagoon.1bpp",    footprint_top
 INCBIN "gfx/footprints/furret.1bpp",     footprint_top
 INCBIN "gfx/footprints/hoothoot.1bpp",   footprint_top
 INCBIN "gfx/footprints/noctowl.1bpp",    footprint_top
@@ -381,7 +381,7 @@ INCBIN "gfx/footprints/ledian.1bpp",     footprint_top
 INCBIN "gfx/footprints/spinarak.1bpp",   footprint_top
 INCBIN "gfx/footprints/ariados.1bpp",    footprint_top
 ; 161-168 bottom halves
-INCBIN "gfx/footprints/sentret.1bpp",    footprint_bottom
+INCBIN "gfx/footprints/zigzagoon.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/furret.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/hoothoot.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/noctowl.1bpp",    footprint_bottom

@@ -35,7 +35,7 @@ Pokered_MonIndices:
 	db GROWLITHE
 	db ONIX
 	db FEAROW
-	db PIDGEY
+	db TAILLOW
 	db SLOWPOKE
 	db KADABRA
 	db GRAVELER
@@ -111,7 +111,7 @@ Pokered_MonIndices:
 	db PARAS
 	db POLIWHIRL
 	db POLIWRATH
-	db WEEDLE
+	db AZURILL
 	db KAKUNA
 	db BEEDRILL
 	db HOUNDOOM ; MISSINGNO.
@@ -122,7 +122,7 @@ Pokered_MonIndices:
 	db DEWGONG
 	db KINGDRA ; MISSINGNO.
 	db PHANPY ; MISSINGNO.
-	db CATERPIE
+	db WURMPLE
 	db METAPOD
 	db BUTTERFREE
 	db MACHAMP
@@ -200,7 +200,7 @@ Pokered_MonIndices:
 	db TOTODILE
 	db CROCONAW
 	db FERALIGATR
-	db SENTRET
+	db ZIGZAGOON
 	db FURRET
 	db HOOTHOOT
 	db NOCTOWL
