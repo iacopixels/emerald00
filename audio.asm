@@ -149,7 +149,6 @@ SECTION "Extra Songs 2", ROMX
 
 INCLUDE "audio/music/postcredits.asm"
 
-
 SECTION "Sound Effects", ROMX
 
 INCLUDE "audio/sfx.asm"
@@ -165,3 +164,10 @@ SECTION "Cries", ROMX
 INCLUDE "data/pokemon/cries.asm"
 
 INCLUDE "audio/cries.asm"
+
+SECTION "Hoenn Songs 1", ROMX
+
+INCLUDE "audio/music/littleroottown.asm"
+INCLUDE "audio/music/route101.asm"
+INCLUDE "audio/music/oldaletown.asm"
+INCLUDE "audio/music/help.asm"
