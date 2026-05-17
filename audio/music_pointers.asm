@@ -107,4 +107,8 @@ Music:
 	dba Music_SuicuneBattle
 	dba Music_BattleTowerLobby
 	dba Music_MobileCenter
+	dba Music_LittlerootTown
+	dba Music_Route101
+	dba Music_OldaleTown
+	dba Music_Help
 	assert_table_length NUM_MUSIC_SONGS

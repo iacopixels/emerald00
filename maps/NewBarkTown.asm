@@ -287,6 +287,7 @@ NewBarkTown_MapEvents:
 	warp_event  5,  7, PLAYERS_HOUSE_1F, 1
 	warp_event 13,  7, PLAYERS_NEIGHBORS_HOUSE, 1
 	warp_event 14, 19, ELMS_HOUSE, 1
+	warp_event  4,  9, INSIDE_TRUCK, 1
 
 	def_coord_events
 	coord_event  0,  8, SCENE_NEWBARKTOWN_TEACHER_STOPS_YOU, NewBarkTown_TeacherStopsYouScene1
