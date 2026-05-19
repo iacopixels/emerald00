@@ -468,6 +468,7 @@ ENDM
 	map_const ROUTE_27_SANDSTORM_HOUSE,                     4,  4 ; 12
 	map_const ROUTE_29_ROUTE_46_GATE,                       5,  4 ; 13
 	map_const INSIDE_TRUCK,                                 4,  3 ; 14
+	map_const INSIDE_TRUCK_LIGHT,                           4,  3 ; 15
 	endgroup
 
 	newgroup SAFFRON                                              ; 25
