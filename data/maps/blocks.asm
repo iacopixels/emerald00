@@ -1047,6 +1047,7 @@ GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.ablk"
 	
 InsideTruck_Blocks:
+InsideTruckLight_Blocks:
 	INCBIN "maps/InsideTruck.ablk"
 
 ENDSECTION
