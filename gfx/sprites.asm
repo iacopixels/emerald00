@@ -103,8 +103,8 @@ KrisSpriteGFX::                INCBIN "gfx/sprites/kris.2bpp"
 KrisBikeSpriteGFX::            INCBIN "gfx/sprites/kris_bike.2bpp"
 KurtOutsideSpriteGFX::         INCBIN "gfx/sprites/kurt_outside.2bpp"
 SuicuneSpriteGFX::             INCBIN "gfx/sprites/suicune.2bpp"
-EnteiSpriteGFX::               INCBIN "gfx/sprites/entei.2bpp"
-RaikouSpriteGFX::              INCBIN "gfx/sprites/raikou.2bpp"
+GiftSpriteGFX::               INCBIN "gfx/sprites/gift.2bpp"
+BirthBagSpriteGFX::              INCBIN "gfx/sprites/birth_bag.2bpp"
 StandingYoungsterSpriteGFX::   INCBIN "gfx/sprites/standing_youngster.2bpp"
 
 SECTION "Sprites 3", ROMX
