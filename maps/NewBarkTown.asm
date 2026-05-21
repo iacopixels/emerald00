@@ -287,14 +287,14 @@ NewBarkTown_MapEvents:
 	warp_event  5,  7, PLAYERS_HOUSE_1F, 1
 	warp_event 13,  7, PLAYERS_NEIGHBORS_HOUSE, 1
 	warp_event 14, 19, ELMS_HOUSE, 1
-	warp_event  4,  9, INSIDE_TRUCK, 1
+	warp_event  5,  9, INSIDE_TRUCK, 1
 
 	def_coord_events
-	coord_event  0,  8, SCENE_NEWBARKTOWN_TEACHER_STOPS_YOU, NewBarkTown_TeacherStopsYouScene1
-	coord_event  0,  9, SCENE_NEWBARKTOWN_TEACHER_STOPS_YOU, NewBarkTown_TeacherStopsYouScene2
+	coord_event  0, 15, SCENE_NEWBARKTOWN_TEACHER_STOPS_YOU, NewBarkTown_TeacherStopsYouScene1
+	coord_event  0, 14, SCENE_NEWBARKTOWN_TEACHER_STOPS_YOU, NewBarkTown_TeacherStopsYouScene2
 
 	def_bg_events
-	bg_event  8,  8, BGEVENT_READ, NewBarkTownSign
+	bg_event  3,  7, BGEVENT_READ, NewBarkTownSign
 	bg_event 11,  5, BGEVENT_READ, NewBarkTownPlayersHouseSign
 	bg_event  3,  3, BGEVENT_READ, NewBarkTownElmsLabSign
 	bg_event  9, 13, BGEVENT_READ, NewBarkTownElmsHouseSign
