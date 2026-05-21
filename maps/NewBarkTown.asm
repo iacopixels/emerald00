@@ -2,6 +2,9 @@
 	const NEWBARKTOWN_TEACHER
 	const NEWBARKTOWN_FISHER
 	const NEWBARKTOWN_RIVAL
+	const NEWBARKTOWN_SPRITE_TRUCK_FRONT_TOP
+	const NEWBARKTOWN_SPRITE_TRUCK_FRONT_BOTTOM
+	const NEWBARKTOWN_SPRITE_TRUCK_BACK
 
 NewBarkTown_MapScripts:
 	def_scene_scripts
@@ -124,7 +127,12 @@ NewBarkTownRivalScript:
 	applymovement PLAYER, NewBarkTown_RivalShovesYouOutMovement
 	applymovement NEWBARKTOWN_RIVAL, NewBarkTown_RivalReturnsToTheShadowsMovement
 	end
-
+	
+NewBarkTownTruckFrontTopScript:
+NewBarkTownTruckFrontBottomScript:
+NewBarkTownTruckBackScript:
+	jumptext NewBarkTownTruckText
+	
 NewBarkTownSign:
 	jumptext NewBarkTownSignText
 
@@ -279,6 +287,11 @@ NewBarkTownElmsHouseSignText:
 	text "ELM'S HOUSE"
 	done
 
+NewBarkTownTruckText:
+	text "It's the moving"
+	line "truck."
+	done
+
 NewBarkTown_MapEvents:
 	db 0, 0 ; filler
 
@@ -303,3 +316,6 @@ NewBarkTown_MapEvents:
 	object_event  6,  8, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTeacherScript, -1
 	object_event 12,  9, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownFisherScript, -1
 	object_event  3,  2, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownRivalScript, EVENT_RIVAL_NEW_BARK_TOWN
+	object_event  2,  8, SPRITE_TRUCK_FRONT_TOP, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTruckFrontTopScript, -1
+	object_event  2,  9, SPRITE_TRUCK_FRONT_BOTTOM, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTruckFrontBottomScript, -1	
+	object_event  3,  8, SPRITE_TRUCK_BACK, SPRITEMOVEDATA_BIGDOLLSYM, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTruckBackScript, -1	
