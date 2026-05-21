@@ -128,15 +128,12 @@ AddOutdoorSprites:
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
-	ld c, MAX_OUTDOOR_SPRITES
 .loop
-	push bc
 	ld a, [hli]
+	and a
+	ret z
 	call AddSpriteGFX
-	pop bc
-	dec c
-	jr nz, .loop
-	ret
+	jr .loop
 
 LoadUsedSpritesGFX:
 	ld a, MAPCALLBACK_SPRITES
@@ -346,8 +343,6 @@ AddSpriteGFX:
 	ret
 
 LoadSpriteGFX:
-; BUG: LoadSpriteGFX does not limit the capacity of UsedSprites (see docs/bugs_and_glitches.md)
-
 	ld hl, wUsedSprites
 	ld b, SPRITE_GFX_LIST_CAPACITY
 .loop
@@ -364,8 +359,10 @@ LoadSpriteGFX:
 .done
 	ret
 
-.LoadSprite:
-	call GetSprite
+ .LoadSprite:
+	push bc
+ 	call GetSprite
+	pop bc
 	ld a, l
 	ret
 
