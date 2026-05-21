@@ -106,3 +106,11 @@ SuicuneSpriteGFX::             INCBIN "gfx/sprites/suicune.2bpp"
 EnteiSpriteGFX::               INCBIN "gfx/sprites/entei.2bpp"
 RaikouSpriteGFX::              INCBIN "gfx/sprites/raikou.2bpp"
 StandingYoungsterSpriteGFX::   INCBIN "gfx/sprites/standing_youngster.2bpp"
+
+SECTION "Sprites 3", ROMX
+
+PoochyenaSpriteGFX::           INCBIN "gfx/sprites/poochyena.2bpp"
+MachokeboxSpriteGFX::          INCBIN "gfx/sprites/machokebox.2bpp"
+TruckFrontTopSpriteGFX::       INCBIN "gfx/sprites/truck_front_top.2bpp"
+TruckFrontBottomSpriteGFX::    INCBIN "gfx/sprites/truck_front_bottom.2bpp"
+TruckBackSpriteGFX::           INCBIN "gfx/sprites/truck_back.2bpp"
