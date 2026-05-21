@@ -104,6 +104,12 @@
 	const SPRITE_ENTEI ; 64
 	const SPRITE_RAIKOU ; 65
 	const SPRITE_STANDING_YOUNGSTER ; 66
+	const SPRITE_POOCHYENA ; 67
+	const SPRITE_MACHOKEBOX ; 68
+	const SPRITE_TRUCK_FRONT_TOP ; 69
+	const SPRITE_TRUCK_FRONT_BOTTOM ; 6a
+	const SPRITE_TRUCK_BACK ; 6b
+
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
