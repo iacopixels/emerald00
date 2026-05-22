@@ -1,7 +1,15 @@
 InsideTruck_MapScripts:
 	def_scene_scripts
-
+	scene_script InsideTruckNoop1Scene, SCENE_INSIDETRUCK_ARRIVED
+	scene_script InsideTruckNoop2Scene, SCENE_INSIDETRUCK_NOOP
+	
 	def_callbacks
+
+InsideTruckNoop1Scene:
+	end
+	
+InsideTruckNoop2Scene:	
+	end
 
 InsideTruckArrivalScript:
 	checkevent EVENT_INSIDE_TRUCK_ARRIVED
@@ -76,8 +84,8 @@ InsideTruck_MapEvents:
 	warp_event  7,  3, NEW_BARK_TOWN, 5
 
 	def_coord_events
-	coord_event  5,  2, SCENE_ALWAYS, InsideTruckArrivalScript
-	coord_event  5,  3, SCENE_ALWAYS, InsideTruckArrivalScriptDown
+	coord_event  5,  2, SCENE_INSIDETRUCK_ARRIVED, InsideTruckArrivalScript
+	coord_event  5,  3, SCENE_INSIDETRUCK_ARRIVED, InsideTruckArrivalScriptDown
 
 	def_bg_events
 	bg_event  1,  1, BGEVENT_ITEM, InsideTruckHiddenSodaPop
