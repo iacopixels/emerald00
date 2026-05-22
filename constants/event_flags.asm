@@ -1461,7 +1461,9 @@
 	const EVENT_BATTLE_TOWER_OPEN_CIVILIANS
 	const EVENT_INSIDE_TRUCK_HIDDEN_SODA_POP; Hoenn Events start here!
 	const EVENT_INSIDE_TRUCK_ARRIVED
+	const EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+	
 ; Unused: next 48 events
 
 	const_next 2048
-DEF NUM_EVENTS EQU const_value ; 800
+DEF NUM_EVENTS EQU const_value ; 787
