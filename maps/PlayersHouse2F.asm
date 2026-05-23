@@ -3,6 +3,7 @@
 	const PLAYERSHOUSE2F_DOLL_1
 	const PLAYERSHOUSE2F_DOLL_2
 	const PLAYERSHOUSE2F_BIG_DOLL
+	const PLAYERSHOUSE2F_GIFT
 
 PlayersHouse2F_MapScripts:
 	def_scene_scripts
@@ -86,6 +87,56 @@ PlayersHousePCScript:
 	warp NONE, 0, 0
 	end
 
+PlayersHouseGiftScript:
+	checkevent EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+	iftrue .done
+	opentext
+	writetext PlayersHouseGiftText1
+	waitbutton
+	closetext
+	playsound SFX_ITEM
+	opentext
+	writetext PlayersHouseGiftText2
+	waitbutton
+	disappear PLAYERSHOUSE2F_GIFT
+	writetext PlayersHouseGiftText3
+	waitbutton
+	writetext PlayersHouseGiftText4
+	waitbutton
+	closetext
+	setevent EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+	end
+.done:
+	end
+
+PlayersHouseGiftText1:
+	text "It's a gift from"
+	line "Dad."
+	done
+
+PlayersHouseGiftText2:
+	text "It's RUNNING"
+	line "SHOES!"
+	done
+
+PlayersHouseGiftText3:
+	text "<PLAYER> puts on"
+	line "the new shoes."
+	para "Press B to run!"
+	para "Huh? There's a"
+	line "letter too."
+	done
+
+PlayersHouseGiftText4:
+	text "<PLAYER>, I hope"
+	line "you have lots of"
+	cont "adventure in this"
+	para "new region. Come"
+	line "visit me in"
+	cont "PETALBURG CITY."
+	para "Love, Dad"
+	done
+
 PlayersRadioText1:
 	text "PROF.OAK'S #MON"
 	line "TALK! Please tune"
@@ -123,5 +174,7 @@ PlayersHouse2F_MapEvents:
 	def_object_events
 	object_event  4,  2, SPRITE_CONSOLE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseGameConsoleScript, EVENT_PLAYERS_HOUSE_2F_CONSOLE
 	object_event  4,  4, SPRITE_DOLL_1, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseDoll1Script, EVENT_PLAYERS_HOUSE_2F_DOLL_1
-	object_event  5,  4, SPRITE_DOLL_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseDoll2Script, EVENT_PLAYERS_HOUSE_2F_DOLL_2
+	object_event  3,  4, SPRITE_DOLL_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseDoll2Script, EVENT_PLAYERS_HOUSE_2F_DOLL_2
 	object_event  0,  1, SPRITE_BIG_DOLL, SPRITEMOVEDATA_BIGDOLL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseBigDollScript, EVENT_PLAYERS_HOUSE_2F_BIG_DOLL
+	object_event  5,  4, SPRITE_GIFT, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseGiftScript, EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+
