@@ -1,5 +1,6 @@
 	object_const_def
 	const PLAYERSHOUSE1F_MOM
+	const PLAYERSHOUSE1F_MOM2
 	const PLAYERSHOUSE1F_MACHOKEBOX_1
 	const PLAYERSHOUSE1F_MACHOKEBOX_2
 	const PLAYERSHOUSE1F_MACHOKEBOX_3
@@ -77,7 +78,7 @@ MomScript:
 
 PlayersHouse1FBlockScript:
 	checkevent EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
-	iftrue .done
+	iftrue .neighborHint
 	showemote EMOTE_SHOCK, PLAYERSHOUSE1F_MOM, 15
 	turnobject PLAYERSHOUSE1F_MOM, DOWN
 	opentext
@@ -85,8 +86,45 @@ PlayersHouse1FBlockScript:
 	waitbutton
 	closetext
 	applymovement PLAYER, PlayersHouse1FPlayerStepsUpMovement
+	end
+
+.neighborHint:
+	checkevent EVENT_PLAYERS_HOUSE_MOM_NEIGHBOR_HINT
+	iftrue .done
+	turnobject PLAYERSHOUSE1F_MOM2, DOWN
+	opentext
+	writetext PlayersHouse1FMomCallPlayer
+	waitbutton
+	closetext
+	turnobject PLAYER, UP
+	pause 15
+	playmusic MUSIC_NONE
+	opentext
+	writetext PlayersHouse1FMomNeighborText1
+	waitbutton
+	writetext PlayersHouse1FMomNeighborText2
+	waitbutton
+	writetext PlayersHouse1FMomNeighborText3
+	waitbutton
+	closetext
+	turnobject PLAYERSHOUSE1F_MOM2, LEFT
+	special RestartMapMusic
+	setevent EVENT_PLAYERS_HOUSE_MOM_NEIGHBOR_HINT
 .done:
 	end
+	
+MomScriptAfter:
+	faceplayer
+	opentext
+	writetext PlayersHouse1FMomAfterText
+	waitbutton
+	closetext
+	end
+
+PlayersHouse1FMomAfterText:
+	text "I'm enjoying this"
+	line "new house!"
+	done
 
 MachokEBoxScript:
 	faceplayer
@@ -219,6 +257,46 @@ PlayersHouse1FTVText:
 	line "rolling too!"
 	done
 	
+PlayersHouse1FMomCallPlayer:
+	text "<PLAYER>."
+	line " "
+	done
+
+PlayersHouse1FMomNeighborText1:	
+	text "I know you miss"
+	line "your old friends."
+
+	para "I know you miss"
+	line "our old hometown."
+	
+	para "But your father"
+	line "really wanted this"
+	cont "job."
+
+	para "His dream has"
+	line "always been to be"
+	cont "part of the"
+
+	para "#MON League."
+	line "Give our new house"
+	cont "a chance for him."
+	done
+
+PlayersHouse1FMomNeighborText2:
+	text "I heard the"
+	line "neighbor has a kid"
+	cont "around your age."
+	done
+
+PlayersHouse1FMomNeighborText3:
+	text "Why don't you"
+	line "introduce your-"
+	cont "self?"
+
+	para "You two could"
+	line "become friends!"
+	done
+	
 PlayersHouse1F_MapEvents:
 	db 0, 0 ; filler
 
@@ -238,7 +316,8 @@ PlayersHouse1F_MapEvents:
 	bg_event  4,  1, BGEVENT_READ, PlayersHouse1FTVScript
 
 	def_object_events
-	object_event  6,  5, SPRITE_MOM, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_1
-	object_event  1,  4, SPRITE_MACHOKEBOX, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MachokEBoxScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  3,  6, SPRITE_MACHOKEBOX, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MachokEBoxScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  7,  2, SPRITE_MACHOKEBOX, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MachokEBoxScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  6,  5, SPRITE_MOM, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScriptAfter, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  1,  4, SPRITE_MACHOKEBOX, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MachokEBoxScript, EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+	object_event  3,  6, SPRITE_MACHOKEBOX, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MachokEBoxScript, EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+	object_event  7,  2, SPRITE_MACHOKEBOX, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MachokEBoxScript, EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES

@@ -105,6 +105,7 @@ PlayersHouseGiftScript:
 	waitbutton
 	closetext
 	setevent EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+	clearevent EVENT_PLAYERS_HOUSE_MOM_2
 	end
 .done:
 	end
@@ -115,8 +116,8 @@ PlayersHouseGiftText1:
 	done
 
 PlayersHouseGiftText2:
-	text "It's RUNNING"
-	line "SHOES!"
+	text "It's the"
+	line "RUNNING SHOES!"
 	done
 
 PlayersHouseGiftText3:
@@ -157,6 +158,29 @@ PlayersRadioText4:
 	line "#MON CHANNEL…"
 	done
 
+PlayersHouse2FBlockScript:
+	checkevent EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+	iftrue .done
+	showemote EMOTE_SHOCK, PLAYER, 15
+	turnobject PLAYER, DOWN
+	opentext
+	writetext PlayersHouse2FBlockText
+	waitbutton
+	closetext
+	applymovement PLAYER, PlayersHouse2FPlayerStepsDownMovement
+.done:
+	end
+
+PlayersHouse2FPlayerStepsDownMovement:
+	step DOWN
+	step_end
+
+PlayersHouse2FBlockText:
+	text "There's a gift on"
+	line "the table!"
+	done
+
+
 PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
@@ -164,6 +188,8 @@ PlayersHouse2F_MapEvents:
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
 
 	def_coord_events
+	coord_event  7,  1, SCENE_ALWAYS, PlayersHouse2FBlockScript
+
 
 	def_bg_events
 	bg_event  2,  1, BGEVENT_UP, PlayersHousePCScript

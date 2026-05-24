@@ -29,6 +29,7 @@ InsideTruckArrivalScript:
 	closetext
 	pause 20
 	setevent EVENT_INSIDE_TRUCK_ARRIVED
+	setevent EVENT_PLAYERS_HOUSE_MOM_2
 	checktime NITE
 	iftrue .endscene
 	warp INSIDE_TRUCK_LIGHT, 5, 2
