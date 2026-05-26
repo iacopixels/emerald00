@@ -3109,6 +3109,7 @@ wMountMoonSquareSceneID::                         db
 wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
 wInsideTruckSceneID::                             db
+wPlayersNeighborsHouseSceneID::                   db
 
 	ds 48
 
