@@ -156,8 +156,8 @@ NamingScreenJumptable:
 	db "YOUR NAME?@"
 
 .Rival:
-	ld de, RivalSpriteGFX
-	ld b, BANK(RivalSpriteGFX)
+	ld de, SilverSpriteGFX
+	ld b, BANK(SilverSpriteGFX)
 	call .LoadSprite
 	hlcoord 5, 2
 	ld de, .RivalNameString

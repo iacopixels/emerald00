@@ -30,11 +30,13 @@ InsideTruckArrivalScript:
 	pause 20
 	setevent EVENT_INSIDE_TRUCK_ARRIVED
 	setevent EVENT_PLAYERS_HOUSE_MOM_2
-	checktime NITE
-	iftrue .endscene
+	checkflag ENGINE_PLAYER_IS_FEMALE
+	iftrue .malerival
 	warp INSIDE_TRUCK_LIGHT, 5, 2
 	end
-.endscene:
+.malerival:
+	variablesprite SPRITE_RIVAL, SPRITE_CHRIS
+	warp INSIDE_TRUCK_LIGHT, 5, 2
 	end
 .done:
 	end
