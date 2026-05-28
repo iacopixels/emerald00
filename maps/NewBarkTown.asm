@@ -3,17 +3,22 @@ object_const_def
 	const NEWBARKTOWN_SPRITE_TRUCK_FRONT_TOP
 	const NEWBARKTOWN_SPRITE_TRUCK_FRONT_BOTTOM
 	const NEWBARKTOWN_SPRITE_TRUCK_BACK
+	const NEWBARKTOWN_BUGCATCHER_1
 
 NewBarkTown_MapScripts:
 	def_scene_scripts
-	scene_script NewBarkTownIntroScene,  SCENE_NEWBARKTOWN_MOM_STOPS_YOU
-	scene_script NewBarkTownNoopScene,   SCENE_NEWBARKTOWN_NOOP
+	scene_script NewBarkTownMomIntroScene,       SCENE_LITTLEROOT_MOM_INTRO
+	scene_script NewBarkTownBugCatcherScene,     SCENE_LITTLEROOT_BUGCATCHER_STOPS_YOU
+	scene_script NewBarkTownNoopScene,           SCENE_LITTLEROOT_NOOP
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, NewBarkTownNewMapCallback
 
-NewBarkTownIntroScene:
+NewBarkTownMomIntroScene:
 	sdefer NewBarkTownMomIntroScript
+	end
+
+NewBarkTownBugCatcherScene:
 	end
 
 NewBarkTownNoopScene:
@@ -21,20 +26,9 @@ NewBarkTownNoopScene:
 
 NewBarkTownNewMapCallback:
 	setflag ENGINE_FLYPOINT_NEW_BARK
-	clearevent EVENT_FIRST_TIME_BANKING_WITH_MOM
-	checkevent EVENT_LITTLEROOT_MOM_WELCOMES_YOU
-	iftrue .setNoop
-	checkevent EVENT_PLAYERS_HOUSE_MOM_GREETED
-	iftrue .setNoop
-	setscene SCENE_NEWBARKTOWN_MOM_STOPS_YOU
-	endcallback
-.setNoop:
-	setscene SCENE_NEWBARKTOWN_NOOP
 	endcallback
 
 NewBarkTownMomIntroScript:
-	checkevent EVENT_LITTLEROOT_MOM_WELCOMES_YOU
-	iftrue .done
 	showemote EMOTE_SHOCK, NEWBARKTOWN_MOM, 15
 	applymovement NEWBARKTOWN_MOM, NewBarkTownMomIntroMovement1
 	opentext
@@ -46,14 +40,105 @@ NewBarkTownMomIntroScript:
 	applymovement NEWBARKTOWN_MOM, NewBarkTownMomIntroMovement2
 	disappear NEWBARKTOWN_MOM
 	applymovement PLAYER, NewBarkTownPlayerIntroMovement
-	setevent EVENT_LITTLEROOT_MOM_WELCOMES_YOU
-	setscene SCENE_NEWBARKTOWN_NOOP
+	setscene SCENE_LITTLEROOT_BUGCATCHER_STOPS_YOU
 	warp PLAYERS_HOUSE_1F, 6, 7
 	end
-.done:
+
+NewBarkTownBugCatcherScript:
+	faceplayer
+	opentext
+	checkevent EVENT_PLAYERS_NEIGHBORS_HOUSE_MEET_RIVAL
+	iftrue .afterRival
+	writetext NewBarkTownBugCatcherText2
+	waitbutton
+	closetext
+	end
+.afterRival:
+	writetext NewBarkTownBugCatcherText3
+	waitbutton
+	closetext
 	end
 
-NewBarkTownMomScript:
+NewBarkTownBugCatcherBlock8:
+	turnobject NEWBARKTOWN_BUGCATCHER_1, LEFT
+	showemote EMOTE_SHOCK, NEWBARKTOWN_BUGCATCHER_1, 15
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownBugCatcherApproach8
+	turnobject PLAYER, DOWN
+	opentext
+	writetext NewBarkTownBugCatcherText1
+	waitbutton
+	closetext
+	follow NEWBARKTOWN_BUGCATCHER_1, PLAYER
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownPlayerPushedBack
+	stopfollow
+	turnobject NEWBARKTOWN_BUGCATCHER_1, UP
+	opentext
+	writetext NewBarkTownBugCatcherText2
+	waitbutton
+	closetext
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownBugCatcherReturn8
+	end
+
+NewBarkTownBugCatcherBlock9:
+	turnobject NEWBARKTOWN_BUGCATCHER_1, LEFT
+	showemote EMOTE_SHOCK, NEWBARKTOWN_BUGCATCHER_1, 15
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownBugCatcherApproach9
+	turnobject PLAYER, DOWN
+	opentext
+	writetext NewBarkTownBugCatcherText1
+	waitbutton
+	closetext
+	follow NEWBARKTOWN_BUGCATCHER_1, PLAYER
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownPlayerPushedBack
+	stopfollow
+	turnobject NEWBARKTOWN_BUGCATCHER_1, UP
+	opentext
+	writetext NewBarkTownBugCatcherText2
+	waitbutton
+	closetext
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownBugCatcherReturn9
+	end
+
+NewBarkTownBugCatcherBlock10:
+	turnobject NEWBARKTOWN_BUGCATCHER_1, LEFT
+	showemote EMOTE_SHOCK, NEWBARKTOWN_BUGCATCHER_1, 15
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownBugCatcherApproach10
+	turnobject PLAYER, DOWN
+	opentext
+	writetext NewBarkTownBugCatcherText1
+	waitbutton
+	closetext
+	follow NEWBARKTOWN_BUGCATCHER_1, PLAYER
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownPlayerPushedBack
+	stopfollow
+	turnobject NEWBARKTOWN_BUGCATCHER_1, UP
+	opentext
+	writetext NewBarkTownBugCatcherText2
+	waitbutton
+	closetext
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownBugCatcherReturn10
+	end
+
+NewBarkTownBugCatcherBlock11:
+	turnobject NEWBARKTOWN_BUGCATCHER_1, LEFT
+	showemote EMOTE_SHOCK, NEWBARKTOWN_BUGCATCHER_1, 15
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownBugCatcherApproach11
+	turnobject PLAYER, DOWN
+	opentext
+	writetext NewBarkTownBugCatcherText1
+	waitbutton
+	closetext
+	follow NEWBARKTOWN_BUGCATCHER_1, PLAYER
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownPlayerPushedBack
+	stopfollow
+	turnobject NEWBARKTOWN_BUGCATCHER_1, UP
+	opentext
+	writetext NewBarkTownBugCatcherText2
+	waitbutton
+	closetext
+	applymovement NEWBARKTOWN_BUGCATCHER_1, NewBarkTownBugCatcherReturn11
+	end
+
 NewBarkTownTruckFrontTopScript:
 NewBarkTownTruckFrontBottomScript:
 NewBarkTownTruckBackScript:
@@ -85,6 +170,63 @@ NewBarkTownPlayerIntroMovement:
 	step UP
 	step_end
 
+NewBarkTownBugCatcherApproach8:
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
+	big_step UP
+	step_end
+
+NewBarkTownBugCatcherApproach9:
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
+	big_step UP
+	step_end
+
+NewBarkTownBugCatcherApproach10:
+	big_step LEFT
+	big_step LEFT
+	big_step UP
+	step_end
+
+NewBarkTownBugCatcherApproach11:
+	big_step LEFT
+	big_step UP
+	step_end
+
+NewBarkTownPlayerPushedBack:
+	step DOWN
+	step DOWN
+	step_end
+
+NewBarkTownBugCatcherReturn8:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step UP
+	step_end
+
+NewBarkTownBugCatcherReturn9:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step UP
+	step_end
+
+NewBarkTownBugCatcherReturn10:
+	step RIGHT
+	step RIGHT
+	step UP
+	step_end
+
+NewBarkTownBugCatcherReturn11:
+	step RIGHT
+	step UP
+	step_end
+
 NewBarkTownMomIntroText1:
 	text "You made it!"
 	done
@@ -93,6 +235,29 @@ NewBarkTownMomIntroText2:
 	text "<PLAYER>! I'm so"
 	line "happy! I'll show"
 	cont "you our new house!"
+	done
+
+NewBarkTownBugCatcherText1:
+	text "Don't go there!"
+	done
+
+NewBarkTownBugCatcherText2:
+	text "There are wild"
+	line "#MON on ROUTE"
+	cont "101."
+
+	para "It's dangerous to"
+	line "go alone."
+
+	para "Wait for the"
+	line "professor to"
+	cont "return."
+	done
+
+NewBarkTownBugCatcherText3:
+	text "I heard a scream,"
+	line "can you check it"
+	cont "for me?"
 	done
 
 NewBarkTownSignText:
@@ -130,6 +295,10 @@ NewBarkTown_MapEvents:
 	warp_event  5,  9, INSIDE_TRUCK, 1
 
 	def_coord_events
+	coord_event  8,  0, SCENE_LITTLEROOT_BUGCATCHER_STOPS_YOU, NewBarkTownBugCatcherBlock8
+	coord_event  9,  0, SCENE_LITTLEROOT_BUGCATCHER_STOPS_YOU, NewBarkTownBugCatcherBlock9
+	coord_event 10,  0, SCENE_LITTLEROOT_BUGCATCHER_STOPS_YOU, NewBarkTownBugCatcherBlock10
+	coord_event 11,  0, SCENE_LITTLEROOT_BUGCATCHER_STOPS_YOU, NewBarkTownBugCatcherBlock11
 
 	def_bg_events
 	bg_event  3,  7, BGEVENT_READ, NewBarkTownSign
@@ -138,7 +307,8 @@ NewBarkTown_MapEvents:
 	bg_event  9, 13, BGEVENT_READ, NewBarkTownElmsHouseSign
 
 	def_object_events
-	object_event  6,  8, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownMomIntroScript,  EVENT_LITTLEROOT_MOM_WELCOMES_YOU
+	object_event  6,  8, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownMomIntroScript, EVENT_LITTLEROOT_MOM_WELCOMES_YOU
 	object_event  2,  8, SPRITE_TRUCK_FRONT_TOP, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTruckFrontTopScript, EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
 	object_event  2,  9, SPRITE_TRUCK_FRONT_BOTTOM, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTruckFrontBottomScript, EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
 	object_event  3,  8, SPRITE_TRUCK_BACK, SPRITEMOVEDATA_BIGDOLLSYM, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTruckBackScript, EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+	object_event 12,  2, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownBugCatcherScript, -1

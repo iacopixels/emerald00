@@ -7,10 +7,15 @@
 
 PlayersHouse2F_MapScripts:
 	def_scene_scripts
+	scene_script PlayersHouse2FBlockScene, SCENE_PLAYERSHOUSE2F_BLOCK
+	scene_script PlayersHouse2FNoopScene,  SCENE_PLAYERSHOUSE2F_NOOP
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, PlayersHouse2FInitializeRoomCallback
 	callback MAPCALLBACK_TILES, PlayersHouse2FSetUpTileDecorationsCallback
+
+PlayersHouse2FBlockScene:
+	end
 
 PlayersHouse2FNoopScene: ; unreferenced
 	end
@@ -105,6 +110,7 @@ PlayersHouseGiftScript:
 	waitbutton
 	closetext
 	setevent EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+	setscene SCENE_PLAYERSHOUSE2F_NOOP
 	clearevent EVENT_PLAYERS_HOUSE_MOM_2
 	end
 .done:
@@ -159,8 +165,6 @@ PlayersRadioText4:
 	done
 
 PlayersHouse2FBlockScript:
-	checkevent EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
-	iftrue .done
 	showemote EMOTE_SHOCK, PLAYER, 15
 	turnobject PLAYER, DOWN
 	opentext
@@ -188,8 +192,7 @@ PlayersHouse2F_MapEvents:
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
 
 	def_coord_events
-	coord_event  7,  1, SCENE_ALWAYS, PlayersHouse2FBlockScript
-
+	coord_event  7,  1, SCENE_PLAYERSHOUSE2F_BLOCK, PlayersHouse2FBlockScript
 
 	def_bg_events
 	bg_event  2,  1, BGEVENT_UP, PlayersHousePCScript

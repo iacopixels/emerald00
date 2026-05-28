@@ -3110,6 +3110,8 @@ wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
 wInsideTruckSceneID::                             db
 wPlayersNeighborsHouseSceneID::                   db
+wPlayersHouse2FSceneID::                          db
+
 
 	ds 48
 

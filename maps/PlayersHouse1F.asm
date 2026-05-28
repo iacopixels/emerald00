@@ -5,11 +5,12 @@
 	const PLAYERSHOUSE1F_MACHOKEBOX_2
 	const PLAYERSHOUSE1F_MACHOKEBOX_3
 
-
+; editsemifinal
 PlayersHouse1F_MapScripts:
 	def_scene_scripts
-	scene_script PlayersHouse1FIntroScene, SCENE_PLAYERSHOUSE1F_MEET_MOM
-	scene_script PlayersHouse1FNoopScene,  SCENE_PLAYERSHOUSE1F_NOOP
+	scene_script PlayersHouse1FIntroScene,  SCENE_PLAYERSHOUSE1F_MEET_MOM    ; 0: intro/pokegear
+	scene_script PlayersHouse1FBlockScene,  SCENE_PLAYERSHOUSE1F_BLOCK       ; 1: bloqueia porta
+	scene_script PlayersHouse1FNoopScene,   SCENE_PLAYERSHOUSE1F_NOOP        ; 2: livre
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, PlayersHouse1FNewMapCallback
@@ -18,13 +19,21 @@ PlayersHouse1FIntroScene:
 	sdefer PlayersHouse1FIntroScript
 	end
 
-PlayersHouse1FNoopScene:
+PlayersHouse1FBlockScene:
 	end
 
+PlayersHouse1FNoopScene:
+	end
+	
 PlayersHouse1FNewMapCallback:
 	checkevent EVENT_PLAYERS_HOUSE_MOM_INTRO
-	iftrue .done
+	iftrue .checkBlock
 	setscene SCENE_PLAYERSHOUSE1F_MEET_MOM
+	endcallback
+.checkBlock:
+	checkevent EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
+	iftrue .done
+	setscene SCENE_PLAYERSHOUSE1F_BLOCK
 .done:
 	endcallback
 
@@ -64,7 +73,7 @@ PlayersHouse1FIntroScript:
 	special RestartMapMusic
 	setevent EVENT_PLAYERS_HOUSE_MOM_GREETED
 	setevent EVENT_PLAYERS_HOUSE_MOM_INTRO
-	setscene SCENE_PLAYERSHOUSE1F_NOOP
+	setscene SCENE_PLAYERSHOUSE1F_BLOCK
 .done:
 	end
 
@@ -110,6 +119,7 @@ PlayersHouse1FBlockScript:
 	turnobject PLAYERSHOUSE1F_MOM2, LEFT
 	special RestartMapMusic
 	setevent EVENT_PLAYERS_HOUSE_MOM_NEIGHBOR_HINT
+	setscene SCENE_PLAYERSHOUSE1F_NOOP
 .done:
 	end
 	
@@ -306,8 +316,8 @@ PlayersHouse1F_MapEvents:
 	warp_event  9,  0, PLAYERS_HOUSE_2F, 1
 
 	def_coord_events
-	coord_event  6,  7, SCENE_ALWAYS, PlayersHouse1FBlockScript
-	coord_event  7,  7, SCENE_ALWAYS, PlayersHouse1FBlockScript
+	coord_event  6,  7, SCENE_PLAYERSHOUSE1F_BLOCK, PlayersHouse1FBlockScript
+	coord_event  7,  7, SCENE_PLAYERSHOUSE1F_BLOCK, PlayersHouse1FBlockScript
 
 	def_bg_events
 	bg_event  0,  1, BGEVENT_READ, PlayersHouse1FStoveScript

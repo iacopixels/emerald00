@@ -86,4 +86,5 @@ MapScenes::
 	scene_var MOBILE_BATTLE_ROOM,                          wMobileBattleRoomSceneID
 	scene_var INSIDE_TRUCK,                                wInsideTruckSceneID
 	scene_var PLAYERS_NEIGHBORS_HOUSE,                     wPlayersNeighborsHouseSceneID
+	scene_var PLAYERS_HOUSE_2F,                            wPlayersHouse2FSceneID
 	db -1 ; end

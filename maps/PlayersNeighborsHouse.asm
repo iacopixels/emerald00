@@ -64,6 +64,7 @@ PlayersNeighborsHouseIntroScript:
 	disappear PLAYERSNEIGHBORSHOUSE_RIVAL
 	setevent EVENT_PLAYERS_NEIGHBORS_HOUSE_MEET_RIVAL
 	setscene SCENE_PLAYERSNEIGHBORSHOUSE_NOOP
+	setmapscene NEW_BARK_TOWN, SCENE_LITTLEROOT_NOOP
 	special RestartMapMusic
 .done:
 	end
