@@ -32,7 +32,9 @@ Route101HelpScript:
 	applymovement ROUTE29_OAK, Route101RunProfessorRunMovement
 	stopfollow
 	applymovement ROUTE29_POOCHYENA, Route101PoochyenaFinalStepMovement
-	pause 10
+	pause 20
+	turnobject ROUTE29_OAK, DOWN
+	showemote EMOTE_SHOCK, ROUTE29_OAK, 10
 	opentext
     writetext Route101ProfessorGetPokeballText
     waitbutton
@@ -127,7 +129,7 @@ Route101BirthBag:
 	givepoke TREECKO, 5
 	setevent EVENT_GOT_TREECKO_FROM_BIRTH
 	;writetext Route101ReceivedPokemonText
-	promptbutton
+	;promptbutton
 	sjump .StartBattle
 	
 .ChooseTorchic
@@ -142,7 +144,7 @@ Route101BirthBag:
 	givepoke TORCHIC, 5
 	setevent EVENT_GOT_TORCHIC_FROM_BIRTH
 	;writetext Route101ReceivedPokemonText
-	promptbutton
+	;promptbutton
 	sjump .StartBattle
 
 .ChooseMudkip
@@ -157,7 +159,7 @@ Route101BirthBag:
 	givepoke MUDKIP, 5
 	setevent EVENT_GOT_MUDKIP_FROM_BIRTH
 	;writetext Route101ReceivedPokemonText
-	promptbutton
+	;promptbutton
 	sjump .StartBattle
 	
 .StartBattle:
@@ -165,6 +167,7 @@ Route101BirthBag:
 	loadwildmon POOCHYENA, 2
 	startbattle
 	reloadmapafterbattle
+	disappear ROUTE29_POOCHYENA
 	turnobject ROUTE29_OAK, DOWN
 	opentext
 	writetext Route101ProfessorThanksText
