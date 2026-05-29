@@ -116,7 +116,7 @@ IndigoGroupSprites:
 	; 0 of max 9 walking sprites
 	db 0 ; end
 
-; Route29 and CherrygroveCity are connected
+; Littleroot, Route 101, Oldale, ROute 102, Route 103
 NewBarkGroupSprites:
 ; Route26, Route27, Route29, NewBarkTown
 CherrygroveGroupSprites:
@@ -124,9 +124,9 @@ CherrygroveGroupSprites:
 	db SPRITE_RIVAL
 	db SPRITE_MOM
 	db SPRITE_FISHER
-	db SPRITE_COOLTRAINER_M
+	db SPRITE_POOCHYENA
 	db SPRITE_YOUNGSTER
-	db SPRITE_MONSTER
+	db SPRITE_OAK
 	db SPRITE_GRAMPS
 	db SPRITE_BUG_CATCHER
 	db SPRITE_COOLTRAINER_F
@@ -136,6 +136,7 @@ CherrygroveGroupSprites:
 	db SPRITE_TRUCK_FRONT_TOP
 	db SPRITE_TRUCK_FRONT_BOTTOM
 	db SPRITE_TRUCK_BACK
+	db SPRITE_BIRTH_BAG
 	db 0 ; end
 
 ; Route37 and EcruteakCity are connected
