@@ -126,7 +126,7 @@ ProfessorWhereAreYouGoingText:
 	
 InTheBagText:
 	text "In the bag!"
-	line "in the bag!"
+	line "In the bag!"
 	done
 
 ; Event Choose a Pokémon!
@@ -210,6 +210,8 @@ Route101BirthBag:
 	closetext
 	setevent EVENT_GOT_A_POKEMON_FROM_BIRTH
 	setscene SCENE_ROUTE101_NOOP
+	clearevent EVENT_BIRTH_LAB_THE_PROFESSOR_IS_IN
+	setmapscene ELMS_LAB, SCENE_BIRTH_LAB_TALK_TO_THE_PROFESSOR
 	special RestartMapMusic
 	warp ELMS_LAB, 4, 4
 	end
@@ -229,6 +231,8 @@ PoochyenaFleed:
 	closetext
 	setevent EVENT_GOT_A_POKEMON_FROM_BIRTH
 	setscene SCENE_ROUTE101_NOOP
+	clearevent EVENT_BIRTH_LAB_THE_PROFESSOR_IS_IN
+	setmapscene ELMS_LAB, SCENE_BIRTH_LAB_TALK_TO_THE_PROFESSOR
 	special RestartMapMusic
 	warp ELMS_LAB, 4, 4
 	end
@@ -287,10 +291,10 @@ Route29Sign1Text:
 	line "OLDALE TOWN"
 	done
 
-;	ToDo:
+; ===== ToDo:
 ;
 ;	If the player somehow loses the battle against Poochyena, the player must be 
-;	transported to Birth's lab and the should continue, using the same text from the DRAW. 
+;	transported to Birth's lab and the scene should continue, using the same text from the DRAW. 
 ;	As currently programmed, the player will be transported inside the truck 
 ;	(start of the game) and will be able to pick up more than one starter.
 
