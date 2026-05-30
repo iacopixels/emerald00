@@ -200,6 +200,7 @@ Route101BirthBag:
 	closetext
 	loadwildmon POOCHYENA, 2
 	startbattle
+	ifequal DRAW, PoochyenaFleed
 	reloadmapafterbattle
 	disappear ROUTE29_POOCHYENA
 	turnobject ROUTE29_OAK, DOWN
@@ -213,13 +214,37 @@ Route101BirthBag:
 	warp ELMS_LAB, 4, 4
 	end
 	
+PoochyenaFleed:
+	reloadmapafterbattle
+	pause 15
+	applymovement ROUTE29_POOCHYENA, Route101PoochyenaFleesMovement
+	opentext
+	writetext Route101PoochyenaFledText
+	waitbutton
+	closetext
+	turnobject ROUTE29_OAK, DOWN
+	opentext
+	writetext Route101ProfessorThanksText
+	waitbutton
+	closetext
+	setevent EVENT_GOT_A_POKEMON_FROM_BIRTH
+	setscene SCENE_ROUTE101_NOOP
+	special RestartMapMusic
+	warp ELMS_LAB, 4, 4
+	end
+
+Route101PoochyenaFleesMovement:
+	big_step UP
+	big_step UP
+	big_step UP
+	step_end	
 	
 Route101ChooseMenuText:
 	text "Pick a #BALL!"
 	done
 	
 Route101ChoosePokemonText:
-	text "Will you choose"
+	text "Will you pick"
 	line "this #MON?"
 	done
 
@@ -236,6 +261,10 @@ Route101ProfessorThanksText:
 
 	para "let's go to my"
 	line "lab, it's safer."
+	done
+	
+Route101PoochyenaFledText:
+	text "POOCHYENA fled!"
 	done
 	
 Route29NoEvent:
@@ -258,6 +287,13 @@ Route29Sign1Text:
 	line "OLDALE TOWN"
 	done
 
+;	ToDo:
+;
+;	If the player somehow loses the battle against Poochyena, the player must be 
+;	transported to Birth's lab and the should continue, using the same text from the DRAW. 
+;	As currently programmed, the player will be transported inside the truck 
+;	(start of the game) and will be able to pick up more than one starter.
+
 Route29_MapEvents:
 	db 0, 0 ; filler
 
@@ -265,7 +301,6 @@ Route29_MapEvents:
 
 	def_coord_events
 	coord_event  6, 14, SCENE_ROUTE101_HELP_THE_PROFESSOR, Route101InThBagScript
-	coord_event  6, 15, SCENE_ROUTE101_HELP_THE_PROFESSOR, Route101InThBagScript
 	coord_event  8, 17, SCENE_ROUTE101_HELP_THE_PROFESSOR, Route101HelpScript
     coord_event  9, 17, SCENE_ROUTE101_HELP_THE_PROFESSOR, Route101HelpScript
     coord_event 10, 17, SCENE_ROUTE101_HELP_THE_PROFESSOR, Route101HelpScript

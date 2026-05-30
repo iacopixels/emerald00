@@ -781,9 +781,9 @@ NamePlayer:
 	ret
 
 .Chris:
-	dname "CHRIS", NAME_LENGTH
+	dname "BRENDAN", NAME_LENGTH
 .Kris:
-	dname "KRIS", NAME_LENGTH
+	dname "MAY", NAME_LENGTH
 
 GSShowPlayerNamingChoices: ; unreferenced
 	call LoadMenuHeader
