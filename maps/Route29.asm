@@ -203,6 +203,7 @@ Route101BirthBag:
 	ifequal DRAW, PoochyenaFleed
 	reloadmapafterbattle
 	disappear ROUTE29_POOCHYENA
+	setevent EVENT_ROUTE101_BEAT_POOCHYENA
 	turnobject ROUTE29_OAK, DOWN
 	opentext
 	writetext Route101ProfessorThanksText
