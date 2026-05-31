@@ -1,5 +1,6 @@
 	object_const_def
 	const BIRTHLAB_BIRTH
+	const BIRTHLAB_RIVAL
 
 ElmsLab_MapScripts:
 	def_scene_scripts
@@ -15,7 +16,7 @@ BirthLabNoopScene:
 LabTryToLeaveScene:
 	end
 	
-; =====	NPCs
+; =====	Prof. Birth
 
 ProfessorBirchScript:
 	faceplayer
@@ -446,8 +447,22 @@ BirchGotMapCardText:
 	line "now has a MAP!"
 	done
 
+; ===== Other NPCs
 
-
+BirthLabRivalScript:
+	faceplayer
+	opentext
+	writetext RivalHurryUpText
+	waitbutton
+	closetext
+	turnobject BIRTHLAB_RIVAL, UP
+	end
+	
+RivalHurryUpText:
+	text "Hurry up!" 
+	line "My dad is waiting"
+	cont "for us."
+	done
 ; =====
 
 ElmsLab_MapEvents:
@@ -466,9 +481,11 @@ ElmsLab_MapEvents:
 
 	def_object_events
 	object_event  5,  3, SPRITE_OAK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ProfessorBirchScript, EVENT_BIRTH_LAB_THE_PROFESSOR_IS_IN
+	object_event  5,  6, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BirthLabRivalScript, EVENT_BIRTH_LAB_THE_RIVAL_IS_IN	
 	;object_event  5,  2, SPRITE_ELM, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ProfElmScript, -1
 	;object_event  2,  9, SPRITE_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ElmsAideScript, EVENT_ELMS_AIDE_IN_LAB
 	;object_event  6,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyndaquilPokeBallScript, EVENT_CYNDAQUIL_POKEBALL_IN_ELMS_LAB
 	;object_event  7,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TotodilePokeBallScript, EVENT_TOTODILE_POKEBALL_IN_ELMS_LAB
 	;object_event  8,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ChikoritaPokeBallScript, EVENT_CHIKORITA_POKEBALL_IN_ELMS_LAB
 	;object_event  5,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CopScript, EVENT_COP_IN_ELMS_LAB
+
