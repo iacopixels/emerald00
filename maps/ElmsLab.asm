@@ -21,6 +21,8 @@ LabTryToLeaveScene:
 ProfessorBirchScript:
 	faceplayer
 	opentext
+	checkevent EVENT_BIRTH_LAB_GOT_POKEDEX
+	iftrue .goodLuckAgainPlayer
 	checkevent EVENT_BIRTHLAB_LOOK_FOR_YOUR_RIVAL
 	iftrue .repeatTipRoute103
 	checkevent EVENT_BIRTHLAB_FIRST_TIME_TALKING_TO_THE_PROF
@@ -146,19 +148,105 @@ ProfessorBirchScript:
 	closetext
 	end
 
+.goodLuckAgainPlayer
+	writetext BirchGoodLuckText
+	waitbutton
+	closetext
+	end
+
+
 ; ===== coord events
 
 LabTryToLeaveLeftScript:
+	checkevent EVENT_ROUTE103_FOUGHT_RIVAL
+	iftrue .giveDex
 	checkevent EVENT_BIRTHLAB_FIRST_TIME_TALKING_TO_THE_PROF
 	iftrue .DontGoLookForYourRival
 	opentext
-    writetext LabTryToLeaveText
-    waitbutton
-    closetext
+	writetext LabTryToLeaveText
+	waitbutton
+	closetext
 	applymovement PLAYER, LabTryToLeaveMovement
 	end
-	
-.DontGoLookForYourRival
+
+.giveDex:
+	opentext
+	writetext BirchOhGoodText
+	promptbutton
+	writetext BirchPokedexHistoryText1
+	promptbutton
+	writetext BirchPokedexHistoryText2
+	promptbutton
+	writetext BirchPokedexHistoryText3
+	promptbutton
+	writetext BirchPokedexHistoryText4
+	promptbutton
+	writetext BirchPokedexHistoryText5
+	promptbutton
+	writetext BirchThisIsMyGiftText
+	waitbutton
+	closetext
+	applymovement BIRTHLAB_RIVAL, BirthLabRivalStepsUpMovement
+	checkflag ENGINE_PLAYER_IS_FEMALE
+	iftrue .rivalIsBrendanDex
+	opentext
+	writetext BirchRivalGotDexTextMay 
+	sjump .playerGetsDex
+.rivalIsBrendanDex:
+	opentext
+	writetext BirchRivalGotDexTextBrendan
+.playerGetsDex:
+	playsound SFX_ITEM
+	waitbutton
+	closetext
+	waitsfx
+	applymovement PLAYER, BirthLabPlayerGetsDexMovement
+	turnobject BIRTHLAB_BIRTH, LEFT
+	opentext
+	writetext BirchPlayerGotDexText
+	playsound SFX_ITEM
+	waitsfx
+	setflag ENGINE_POKEDEX
+	writetext BirchGoMeetMonText
+	waitbutton
+	closetext
+	applymovement BIRTHLAB_RIVAL, BirthLabRivalStepLeftMovement
+	turnobject BIRTHLAB_RIVAL, UP
+	turnobject PLAYER, DOWN
+	opentext
+	writetext BirchRivalLikesResearchText
+	promptbutton
+	writetext BirchRivalLikesTrainingText
+	promptbutton
+	writetext BirchCanDoBothText
+	promptbutton
+	writetext BirchRivalGoingJourneyText
+	waitbutton
+	closetext
+	pause 20
+	turnobject BIRTHLAB_RIVAL, RIGHT
+	opentext
+	writetext BirchRivalByeDadText
+	waitbutton
+	closetext
+	turnobject BIRTHLAB_BIRTH, DOWN
+	applymovement BIRTHLAB_RIVAL, BirthLabRivalLeavesMovement
+	disappear BIRTHLAB_RIVAL
+	pause 10
+	playsound SFX_ENTER_DOOR
+	turnobject BIRTHLAB_BIRTH, LEFT
+	pause 10
+	turnobject PLAYER, RIGHT
+	opentext
+	writetext BirchGoodLuckText
+	waitbutton
+	closetext
+	pause 10
+	setevent EVENT_BIRTH_LAB_GOT_POKEDEX
+	setscene SCENE_BIRTHLAB_NOOP
+	end
+
+.DontGoLookForYourRival:
 	opentext
 	writetext BirchWhereGoingText
 	waitbutton
@@ -206,6 +294,7 @@ LabTryToLeaveLeftScript:
 	writetext BirchCountingOnYouText
 	waitbutton
 	closetext
+	pause 10
 	setevent EVENT_BIRTHLAB_LOOK_FOR_YOUR_RIVAL
 	setscene SCENE_BIRTHLAB_NOOP
 	end
@@ -217,6 +306,155 @@ LabTryToLeaveLeftScript:
 .mapcardname:
 	db "MAP CARD@"
 
+BirthLabRivalStepsUpMovement:
+	step UP
+	step UP
+	step_end
+
+BirthLabPlayerGetsDexMovement:
+	step UP
+	step UP
+	step UP
+	turn_head RIGHT
+	step_end
+
+BirthLabRivalLeavesMovement:
+	big_step DOWN
+	big_step DOWN
+	big_step DOWN
+	big_step DOWN
+	step_end
+
+BirthLabRivalStepLeftMovement:
+	step LEFT
+	step_end
+
+
+BirchOhGoodText:
+	text "Prof. BIRCH: Oh,"
+	line "it's good that"
+	cont "you came!"
+
+	para "I have a gift for"
+	line "both of you!"
+	done
+
+BirchPokedexHistoryText1:
+	text "Four years ago, a"
+	line "great researcher"
+
+	para "and my personal"
+	line "friend, Prof. OAK,"
+
+	para "created a hi-tech"
+	line "encyclopedia with"
+	cont "#MON data!"
+	done
+
+BirchPokedexHistoryText2:
+	text "But it was"
+	line "very limited,"
+	cont "containing only"
+
+	para "data on"
+	line "151 #MON."
+	done
+
+BirchPokedexHistoryText3:
+	text "Last year, the"
+	line "#DEX had its"
+
+	para "first update,"
+	line "increasing its"
+
+	para "capacity to store"
+	line "data on 100 more"
+	cont "#MON!"
+	done
+
+BirchPokedexHistoryText4:
+	text "After further"
+	line "studies, Prof. OAK"
+	cont "and other"
+
+	para "researchers like"
+	line "like myself"
+	cont "understood that"
+
+	para "the #DEX"
+	line "needed a regional"
+	cont "version."
+	done
+
+BirchPokedexHistoryText5:
+	text "Therefore, we are"
+	line "here with the"
+
+	para "first HOENN"
+	line "#DEX!"
+	done
+
+BirchThisIsMyGiftText:
+	text "This is my gift"
+	line "to you all!"
+	done
+
+BirchRivalGotDexTextMay:
+	text "MAY received"
+	line "#DEX!"
+	done
+
+BirchRivalGotDexTextBrendan:
+	text "BRENDAN received"
+	line "#DEX!"
+	done
+
+BirchPlayerGotDexText:
+	text "<PLAYER> received"
+	line "#DEX!"
+	done
+
+BirchGoMeetMonText:
+	text "Go meet many kinds"
+	line "of #MON and"
+
+	para "complete that"
+	line "#DEX!"
+	done
+
+BirchRivalLikesResearchText:
+	text "I really liked the"
+	line "idea of being a"
+	cont "researcher."
+	done
+
+BirchRivalLikesTrainingText:
+	text "But I also like"
+	line "being a trainer."
+	done
+
+BirchCanDoBothText:
+	text "I think you can"
+	line "do both!"
+	done
+
+BirchRivalGoingJourneyText:
+	text "I'm going on my"
+	line "journey, see you"
+	cont "soon!"
+	done
+
+BirchRivalByeDadText:
+	text "Bye Dad!"
+	done
+
+BirchGoodLuckText:
+	text "Good luck on your"
+	line "journey, <PLAYER>!"
+	done
+
+
+; ==== event 5, 6
 LabTryToLeaveRightScript:
 	checkevent EVENT_BIRTHLAB_FIRST_TIME_TALKING_TO_THE_PROF
 	iftrue .DontGoLookForYourRival
