@@ -109,6 +109,10 @@
 	const MUSIC_ROUTE_101                    ; 68
 	const MUSIC_OLDALE_TOWN                  ; 69
 	const MUSIC_HELP                         ; 6a
+	const MUSIC_MAY_ENCOUNTER                ; 6b
+	const MUSIC_BRENDAN_ENCOUNTER            ; 6c
+	const MUSIC_PETALBURG_WOODS              ; 6d
+	const MUSIC_HOENN_RIVAL_BATTLE           ; 6e
 	
 DEF NUM_MUSIC_SONGS EQU const_value
 

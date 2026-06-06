@@ -111,4 +111,8 @@ Music:
 	dba Music_Route101
 	dba Music_OldaleTown
 	dba Music_Help
+	dba Music_MayEncounter
+	dba Music_BrendanEncounter
+	dba Music_PetalburgWoods
+	dba Music_HoennRivalBattle
 	assert_table_length NUM_MUSIC_SONGS

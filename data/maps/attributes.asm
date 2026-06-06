@@ -97,11 +97,10 @@ MACRO connection
 ENDM
 
 
-	map_attributes NewBarkTown, NEW_BARK_TOWN, $05, NORTH | EAST
+	map_attributes NewBarkTown, NEW_BARK_TOWN, $81, NORTH 
 	connection north, Route29, ROUTE_29, 0
-	connection east, Route27, ROUTE_27, 0
 
-	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $35, NORTH | SOUTH
+	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $81, NORTH | SOUTH
 	connection north, Route30, ROUTE_30, 5
 	connection south, Route29, ROUTE_29, 0
 
@@ -148,14 +147,13 @@ ENDM
 	map_attributes Route26, ROUTE_26, $05, WEST
 	connection west, Route27, ROUTE_27, 45
 
-	map_attributes Route27, ROUTE_27, $35, WEST | EAST
-	connection west, NewBarkTown, NEW_BARK_TOWN, 0
+	map_attributes Route27, ROUTE_27, $35, EAST
 	connection east, Route26, ROUTE_26, -45
 
 	map_attributes Route28, ROUTE_28, $2c, WEST
 	connection west, SilverCaveOutside, SILVER_CAVE_OUTSIDE, -9
 
-	map_attributes Route29, ROUTE_29, $05, NORTH | SOUTH 
+	map_attributes Route29, ROUTE_29, $81, NORTH | SOUTH 
 	;connection north, Route46, ROUTE_46, 10
 	connection north, CherrygroveCity, CHERRYGROVE_CITY, 0
 	connection south, NewBarkTown, NEW_BARK_TOWN, 0
