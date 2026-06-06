@@ -453,10 +453,9 @@ ENDM
 	map_const VICTORY_ROAD_GATE,                           10,  9 ; 13
 	endgroup
 
-	newgroup NEW_BARK                                             ; 24
+	newgroup NEW_BARK                                             ; 23
 	map_const ROUTE_26,                                    10, 54 ;  1
 	map_const ROUTE_27,                                    40,  9 ;  2
-	map_const ROUTE_29,                                    30,  10;  3
 	map_const NEW_BARK_TOWN,                               10,  10;  4
 	map_const ELMS_LAB,                                     5,  6 ;  5
 	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  6
@@ -489,7 +488,8 @@ ENDM
 	map_const ROUTE_5_CLEANSE_TAG_HOUSE,                    4,  4 ; 15
 	endgroup
 
-	newgroup CHERRYGROVE                                          ; 26
+	newgroup CHERRYGROVE                                          ; 27
+	map_const ROUTE_29,                                    30,  10;  3
 	map_const ROUTE_30,                                    10, 27 ;  1
 	map_const ROUTE_31,                                    20,  9 ;  2
 	map_const CHERRYGROVE_CITY,                            20,  10;  3
