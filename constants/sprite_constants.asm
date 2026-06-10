@@ -111,7 +111,9 @@
 	const SPRITE_TRUCK_BACK ; 6b
 	const SPRITE_CHRIS_RUN ; 6c
 	const SPRITE_KRIS_RUN ; 6d
-
+	const SPRITE_TRUCK_BROKE ; 6e
+	const SPRITE_TRUCK_TOOLS ; 6f
+	
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

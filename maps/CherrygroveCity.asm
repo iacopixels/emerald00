@@ -550,7 +550,7 @@ CherrygroveCity_MapEvents:
 	def_warp_events
 	warp_event 13,  7, CHERRYGROVE_MART, 2
 	warp_event  5, 17, CHERRYGROVE_POKECENTER_1F, 1
-	warp_event 13, 15, CHERRYGROVE_GYM_SPEECH_HOUSE, 1
+	warp_event 13, 17, CHERRYGROVE_GYM_SPEECH_HOUSE, 1
 	warp_event 31, 11, GUIDE_GENTS_HOUSE, 1
 	warp_event  5,  7, CHERRYGROVE_EVOLUTION_SPEECH_HOUSE, 1
 
@@ -559,7 +559,7 @@ CherrygroveCity_MapEvents:
 	coord_event 33,  7, SCENE_CHERRYGROVECITY_MEET_RIVAL, CherrygroveRivalSceneSouth
 
 	def_bg_events
-	bg_event  6, 12, BGEVENT_READ, CherrygroveCitySign
+	bg_event 11, 11, BGEVENT_READ, CherrygroveCitySign
 	bg_event 30,  8, BGEVENT_READ, GuideGentsHouseSign
 	bg_event 13,  6, BGEVENT_READ, CherrygroveCityMartSign
 	bg_event  6, 17, BGEVENT_READ, CherrygroveCityPokecenterSign
