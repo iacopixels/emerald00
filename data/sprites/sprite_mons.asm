@@ -38,4 +38,5 @@ SpriteMons:
 	db HO_OH
 	db TAILLOW
 	db HOOTHOOT
+	db ZIGZAGOON
 	assert_table_length NUM_POKEMON_SPRITES
