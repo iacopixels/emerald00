@@ -20,6 +20,7 @@ CherrygroveCity_MapScripts:
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, CherrygroveCityFlypointCallback
 
+
 CherrygroveCityNoop1Scene:
 	end
 
@@ -29,6 +30,7 @@ CherrygroveCityNoop2Scene:
 CherrygroveCityFlypointCallback:
 	setflag ENGINE_FLYPOINT_CHERRYGROVE
 	endcallback
+	
 
 ; ===== NPCs
 
@@ -47,12 +49,19 @@ OldaleTownGrampsDayScript:
 	writetext OldaleTownGrampsDayText2
 	waitbutton
 	closetext
+	pause 10
 	faceplayer
 	opentext
 	writetext OldaleTownGrampsDayText3
 	waitbutton
+	writetext OldaleTownGrampsDayText4
 	closetext
 	turnobject OLDALETOWN_GRAMPS_DAY, UP
+	pause 10
+	opentext
+	writetext OldaleTownGrampsDayTextFinal
+	waitbutton
+	closetext
 	end
 	
 OldaleTownGrampsDayText1:
@@ -65,8 +74,7 @@ done
 
 OldaleTownGrampsDayText2:
 text "Like that TAILLOW" 
-line "on my roof that" 
-cont "keeps chirping."
+line "on my roof."
 done
 
 OldaleTownGrampsDayText3:
@@ -74,20 +82,29 @@ text "However, just"
 line "because a" 
 cont "#MON is" 
 
-para "is normally" 
-line "seen during the" 
-cont "day doesn't mean" 
+para "normally seen" 
+line "during the day" 
+cont "doesn't mean" 
 
 para "it can't be found" 
 line "at night."
+done 
 
-para "It can still" 
-line "appear at night," 
+OldaleTownGrampsDayText4:
+text "It can still" 
+line "appear on routes," 
 
 para "or sometimes it" 
 line "hides in a" 
 cont "tree or cave."
 done 
+
+OldaleTownGrampsDayTextFinal:
+text "No droppings" 
+line "on my roof," 
+cont "please!"
+done
+
 
 ; ===== Gramps (NITE)
 
@@ -147,17 +164,20 @@ done
 
 OldaleTownGrampsNiteText4:
 text "It can still" 
-line "appear during the" 
-cont "day, or sometimes" 
+line "appear on routes" 
+cont "or sometimes it" 
 
-para "it hides in a" 
-line "tree or cave."
+para "hides in a tree" 
+line "or cave."
 done
 
 OldaleTownGrampsNiteTextFinal:
 text "I just wanted"
-line "silence to sleep."
+line "some quiet for a"
+cont "good night's rest." 
 done
+
+ 
 
 ; ===== Granny
 
@@ -341,12 +361,12 @@ CherrygroveCity_MapEvents:
 	bg_event 11, 11, BGEVENT_READ, OldaleTownSign
 
 	def_object_events
-	object_event 14, 18, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, OldaleTownGrampsDayScript, -1
+	object_event 14, 18, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, MORN | DAY, 0, OBJECTTYPE_SCRIPT, 0, OldaleTownGrampsDayScript, -1
 	object_event 14, 18, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, NITE, 0, OBJECTTYPE_SCRIPT, 0, OldaleTownGrampsNiteScript, -1
 	object_event 14, 10, SPRITE_GRANNY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldaleTownGrannyScript, -1
 	object_event  6, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldaleTownYoungsterScript, -1
 	object_event  2, 14, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldaleTownFisher1Script, EVENT_BIRTH_LAB_GOT_POKEDEX
-	object_event 14, 16, SPRITE_TAILLOW, SPRITEMOVEDATA_POKEMON, 0, 0, -1, DAY, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, OldalePlaceholderScript, -1
+	object_event 14, 16, SPRITE_TAILLOW, SPRITEMOVEDATA_POKEMON, 0, 0, -1, MORN | DAY, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, OldalePlaceholderScript, -1
 	object_event 14, 16, SPRITE_HOOTHOOT, SPRITEMOVEDATA_POKEMON, 0, 0, -1, NITE, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, OldalePlaceholderScript, -1
 	object_event 19,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldalePlaceholderScript, -1
 	object_event  2, 12, SPRITE_TRUCK_FRONT_TOP, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldaleThatsTheTruckScript, EVENT_BIRTH_LAB_GOT_POKEDEX
