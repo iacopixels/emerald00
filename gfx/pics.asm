@@ -73,7 +73,6 @@ DewgongFrontpic:     INCBIN "gfx/pokemon/dewgong/front.animated.2bpp.lz"
 VictreebelFrontpic:  INCBIN "gfx/pokemon/victreebel/front.animated.2bpp.lz"
 RaichuFrontpic:      INCBIN "gfx/pokemon/raichu/front.animated.2bpp.lz"
 PrimeapeFrontpic:    INCBIN "gfx/pokemon/primeape/front.animated.2bpp.lz"
-OmastarBackpic:      INCBIN "gfx/pokemon/omastar/back.2bpp.lz"
 
 
 SECTION "Pics 4", ROMX
@@ -713,7 +712,9 @@ JaninePic:           INCBIN "gfx/trainers/janine.2bpp.lz"
 ZigzagoonFrontpic:   INCBIN "gfx/pokemon/zigzagoon/front.animated.2bpp.lz"
 SkiploomBackpic:     INCBIN "gfx/pokemon/skiploom/back.2bpp.lz"
 AzurillFrontpic:     INCBIN "gfx/pokemon/azurill/front.animated.2bpp.lz"
-
+RivalBrendanPic:     INCBIN "gfx/trainers/brendan.2bpp.lz"
+RivalMayPic:         INCBIN "gfx/trainers/may.2bpp.lz"
+OmastarBackpic:      INCBIN "gfx/pokemon/omastar/back.2bpp.lz"
 
 
 

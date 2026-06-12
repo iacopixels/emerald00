@@ -1,11 +1,13 @@
 	object_const_def
 	const BIRTHLAB_BIRTH
 	const BIRTHLAB_RIVAL
+	const ELMSLAB_ELMS_AIDE
 
 ElmsLab_MapScripts:
 	def_scene_scripts
-	scene_script BirthLabNoopScene, SCENE_BIRTHLAB_NOOP
+	scene_script BirthLabNoopScene,  SCENE_BIRTHLAB_NOOP
 	scene_script LabTryToLeaveScene, SCENE_BIRTH_LAB_TALK_TO_THE_PROFESSOR
+	scene_script BirthAideGivesPokeBallsScene,  SCENE_ELMSLAB_AIDE_GIVES_POKE_BALLS
 
 	def_callbacks
 ;	callback MAPCALLBACK_OBJECTS, ElmsLabMoveElmCallback
@@ -14,6 +16,9 @@ BirthLabNoopScene:
 	end
 	
 LabTryToLeaveScene:
+	end
+	
+BirthAideGivesPokeBallsScene:
 	end
 	
 ; =====	Prof. Birth
@@ -243,7 +248,7 @@ LabTryToLeaveLeftScript:
 	closetext
 	pause 10
 	setevent EVENT_BIRTH_LAB_GOT_POKEDEX
-	setscene SCENE_BIRTHLAB_NOOP
+	setscene SCENE_ELMSLAB_AIDE_GIVES_POKE_BALLS
 	end
 
 .DontGoLookForYourRival:
@@ -701,6 +706,104 @@ RivalHurryUpText:
 	line "My dad is waiting"
 	cont "for us."
 	done
+	
+	
+; ===== Birth Aide
+
+ElmsAideScript:
+	faceplayer
+	opentext
+	writetext BirthAideText1
+	waitbutton
+	closetext
+	turnobject BIRTHLAB_RIVAL, UP
+	end
+	
+BirthAideText1:
+	text "Placeholder Text."
+	done
+	
+AideScript_WalkBalls1:
+	applymovement ELMSLAB_ELMS_AIDE, AideWalksRight1
+	turnobject PLAYER, DOWN
+	scall AideScript_GiveYouBalls
+	applymovement ELMSLAB_ELMS_AIDE, AideWalksLeft1
+	end
+
+AideScript_WalkBalls2:
+	applymovement ELMSLAB_ELMS_AIDE, AideWalksRight2
+	turnobject PLAYER, DOWN
+	scall AideScript_GiveYouBalls
+	applymovement ELMSLAB_ELMS_AIDE, AideWalksLeft2
+	end
+
+AideScript_GiveYouBalls:
+	opentext
+	writetext AideText_GiveYouBalls
+	promptbutton
+	getitemname STRING_BUFFER_4, POKE_BALL
+	scall AideScript_ReceiveTheBalls
+	giveitem POKE_BALL, 5
+	writetext AideText_ExplainBalls
+	promptbutton
+	itemnotify
+	closetext
+	setscene SCENE_BIRTHLAB_NOOP
+	end
+
+AideScript_ReceiveTheBalls:
+	jumpstd ReceiveItemScript
+	end
+
+AideScript_ExplainBalls:
+	writetext AideText_ExplainBalls
+	waitbutton
+	closetext
+	end
+
+AideWalksRight1:
+	step RIGHT
+	step RIGHT
+	turn_head UP
+	step_end
+
+AideWalksRight2:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	turn_head UP
+	step_end
+
+AideWalksLeft1:
+	step LEFT
+	step LEFT
+	turn_head DOWN
+	step_end
+
+AideWalksLeft2:
+	step LEFT
+	step LEFT
+	step LEFT
+	turn_head DOWN
+	step_end
+
+AideText_GiveYouBalls:
+	text "<PLAY_G>!"
+
+	para "Use these on your"
+	line "#DEX quest!"
+	done
+
+AideText_ExplainBalls:
+	text "To add to your"
+	line "#DEX, you have"
+	cont "to catch #MON."
+
+	para "Throw # BALLS"
+	line "at wild #MON"
+	cont "to get them."
+	done
+
 ; =====
 
 ElmsLab_MapEvents:
@@ -713,6 +816,8 @@ ElmsLab_MapEvents:
 	def_coord_events
 	coord_event  4,  6, SCENE_BIRTH_LAB_TALK_TO_THE_PROFESSOR, LabTryToLeaveLeftScript
 	coord_event  5,  6, SCENE_BIRTH_LAB_TALK_TO_THE_PROFESSOR, LabTryToLeaveRightScript
+	coord_event  4,  8, SCENE_ELMSLAB_AIDE_GIVES_POKE_BALLS, AideScript_WalkBalls1
+	coord_event  5,  8, SCENE_ELMSLAB_AIDE_GIVES_POKE_BALLS, AideScript_WalkBalls2
 
 	def_bg_events
 	;bg_event  2,  1, BGEVENT_READ, ElmsLabHealingMachine
@@ -720,10 +825,6 @@ ElmsLab_MapEvents:
 	def_object_events
 	object_event  5,  3, SPRITE_OAK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ProfessorBirchScript, EVENT_BIRTH_LAB_THE_PROFESSOR_IS_IN
 	object_event  5,  6, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BirthLabRivalScript, EVENT_BIRTH_LAB_THE_RIVAL_IS_IN	
-	;object_event  5,  2, SPRITE_ELM, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ProfElmScript, -1
-	;object_event  2,  9, SPRITE_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ElmsAideScript, EVENT_ELMS_AIDE_IN_LAB
-	;object_event  6,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyndaquilPokeBallScript, EVENT_CYNDAQUIL_POKEBALL_IN_ELMS_LAB
-	;object_event  7,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TotodilePokeBallScript, EVENT_TOTODILE_POKEBALL_IN_ELMS_LAB
-	;object_event  8,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ChikoritaPokeBallScript, EVENT_CHIKORITA_POKEBALL_IN_ELMS_LAB
-	;object_event  5,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CopScript, EVENT_COP_IN_ELMS_LAB
+	object_event  2,  9, SPRITE_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ElmsAideScript, -1
+
 

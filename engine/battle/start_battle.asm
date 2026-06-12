@@ -109,7 +109,15 @@ PlayBattleMusic:
 	ld de, MUSIC_JOHTO_GYM_LEADER_BATTLE
 	farcall IsGymLeader
 	jr c, .done
-
+	
+	ld de, MUSIC_RIVAL_BATTLE
+	ld a, [wOtherTrainerClass]
+	cp RIVAL_BRENDAN
+	jr z, .done
+	ld de, MUSIC_HOENN_RIVAL_BATTLE
+	cp RIVAL_MAY
+	jr z, .done
+	
 	ld de, MUSIC_RIVAL_BATTLE
 	ld a, [wOtherTrainerClass]
 	cp RIVAL1

@@ -701,6 +701,16 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
+	
+	trainerclass RIVAL_BRENDAN ; 44
+	const RIVAL_BRENDAN_1_TREECKO
+	const RIVAL_BRENDAN_1_TORCHIC
+	const RIVAL_BRENDAN_1_MUDKIP
+	
+	trainerclass RIVAL_MAY ; 45
+	const RIVAL_MAY_1_TREECKO
+	const RIVAL_MAY_1_TORCHIC
+	const RIVAL_MAY_1_MUDKIP
 
 DEF KRIS EQU __trainer_class__
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

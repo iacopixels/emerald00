@@ -43,51 +43,50 @@ Route101RivalScript:
 	writetext Route103RivalText5
 	waitbutton
 	closetext
-	pause 20
 	checkflag ENGINE_PLAYER_IS_FEMALE
 	iftrue .MaleRivalTeams
 	checkevent EVENT_GOT_TORCHIC_FROM_BIRTH
 	iftrue .MayUsedMudkip
 	checkevent EVENT_GOT_MUDKIP_FROM_BIRTH
 	iftrue .MayUsedTreecko
-	opentext
-	writetext MayTorchicText
-	waitbutton
-	closetext
+	winlosstext RivalMayWintext, RivalMayLosstext
+	loadtrainer RIVAL_MAY, RIVAL_MAY_1_TORCHIC
+	startbattle
+	reloadmapafterbattle
 	sjump .AfterRivalBattle
 .MayUsedMudkip:
-	opentext
-	writetext MayMudkipText
-	waitbutton
-	closetext
+	winlosstext RivalMayWintext, RivalMayLosstext
+	loadtrainer RIVAL_MAY, RIVAL_MAY_1_MUDKIP
+	startbattle
+	reloadmapafterbattle
 	sjump .AfterRivalBattle
 .MayUsedTreecko:
-	opentext
-	writetext MayTreeckoText
-	waitbutton
-	closetext
+	winlosstext RivalMayWintext, RivalMayLosstext
+	loadtrainer RIVAL_MAY, RIVAL_MAY_1_TREECKO
+	startbattle
+	reloadmapafterbattle
 	sjump .AfterRivalBattle
 .MaleRivalTeams:	
 	checkevent EVENT_GOT_TREECKO_FROM_BIRTH
 	iftrue .BrendanUsedTorchic
 	checkevent EVENT_GOT_MUDKIP_FROM_BIRTH
 	iftrue .BrendanUsedTreecko
-	opentext
-	writetext BrendanMudkipText
-	waitbutton
-	closetext
+	winlosstext RivalBrendanWintext, RivalBrendanLosstext
+	loadtrainer RIVAL_BRENDAN, RIVAL_BRENDAN_1_MUDKIP
+	startbattle
+	reloadmapafterbattle
 	sjump .AfterRivalBattle
 .BrendanUsedTorchic:
-	opentext
-	writetext BrendanTorchicText
-	waitbutton
-	closetext
+	winlosstext RivalBrendanWintext, RivalBrendanLosstext
+	loadtrainer RIVAL_BRENDAN, RIVAL_BRENDAN_1_TORCHIC
+	startbattle
+	reloadmapafterbattle
 	sjump .AfterRivalBattle
 .BrendanUsedTreecko:
-	opentext
-	writetext BrendanTreeckoText
-	waitbutton
-	closetext
+	winlosstext RivalBrendanWintext, RivalBrendanLosstext
+	loadtrainer RIVAL_BRENDAN, RIVAL_BRENDAN_1_TREECKO
+	startbattle
+	reloadmapafterbattle
 	sjump .AfterRivalBattle
 .AfterRivalBattle:
 	opentext
@@ -99,6 +98,9 @@ Route101RivalScript:
 	writetext Route103RivalPostBattleText3
 	waitbutton
 	closetext
+	setevent EVENT_ROUTE103_FOUGHT_RIVAL
+	clearevent EVENT_BIRTH_LAB_THE_RIVAL_IS_IN
+	setmapscene ELMS_LAB, SCENE_BIRTH_LAB_TALK_TO_THE_PROFESSOR
 	pause 10
 	readvar VAR_FACING
 	ifequal UP, .RivalRunAroundPlayer
@@ -140,6 +142,29 @@ RivalLeavesRoute103RunAround2Movement:
 	big_step DOWN
 	big_step DOWN
 	step_end
+
+
+RivalMayWintext:
+text "Wow, you're really"
+line "good."
+done
+
+RivalMayLosstext:
+text "I won! I won!"
+done
+
+
+RivalBrendanWintext:
+text "Wow, you're an"
+line "amazing trainer!"
+done
+
+RivalBrendanLosstext:
+text "Yes! I'm a good"
+line "trainer!"
+done
+
+
 	
 Route103RivalText1:
 text "My dad's nowhere" 
@@ -244,4 +269,4 @@ Route30_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  10,  2, SPRITE_RIVAL, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route101RivalScript, -1
+	object_event  10,  2, SPRITE_RIVAL, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route101RivalScript, EVENT_ROUTE103_FOUGHT_RIVAL

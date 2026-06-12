@@ -26,6 +26,7 @@ MaleTrainers:
 	db SAGE
 	db BIKER
 	db SCIENTIST
+	db RIVAL_BRENDAN
 .End
 
 FemaleTrainers:
@@ -39,4 +40,5 @@ FemaleTrainers:
 	db KIMONO_GIRL
 	db POKEFANF
 	db COOLTRAINERF
+	db RIVAL_MAY
 .End

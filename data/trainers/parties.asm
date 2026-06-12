@@ -3495,3 +3495,34 @@ MysticalmanGroup:
 	db 23, HAUNTER,    LICK, HYPNOSIS, MEAN_LOOK, CURSE
 	db 25, ELECTRODE,  SCREECH, SONICBOOM, THUNDER, ROLLOUT
 	db -1 ; end
+
+RivalBrendanGroup:
+	; RIVAL1 (1)
+	db "BRENDAN@", TRAINERTYPE_NORMAL
+	db  5, TREECKO
+	db -1 ; end
+
+	; RIVAL1 (2)
+	db "BRENDAN@", TRAINERTYPE_NORMAL
+	db  2, TORCHIC
+	db -1 ; end
+
+	; RIVAL1 (3)
+	db "BRENDAN@", TRAINERTYPE_NORMAL
+	db  5, MUDKIP
+	db -1 ; end
+		
+RivalMayGroup:
+	db "MAY@", TRAINERTYPE_NORMAL
+	db  5, TREECKO
+	db -1 ; end
+
+	; RIVAL1 (2)
+	db "MAY@", TRAINERTYPE_NORMAL
+	db  5, TORCHIC
+	db -1 ; end
+
+	; RIVAL1 (3)
+	db "MAY@", TRAINERTYPE_NORMAL
+	db  5, MUDKIP
+	db -1 ; end
