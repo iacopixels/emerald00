@@ -243,7 +243,6 @@ OldaleTownYoungsterScript:
 	writetext OldaleYoungsterText2
 	waitbutton
 	closetext
-	showemote EMOTE_SAD, OLDALETOWN_YOUNGSTER1, 15
 	end
 
 OldaleYoungsterText1:

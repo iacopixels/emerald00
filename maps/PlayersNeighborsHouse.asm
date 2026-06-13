@@ -30,7 +30,7 @@ PlayersNeighborsHouseIntroScript:
 	showemote EMOTE_SHOCK, PLAYERSNEIGHBORSHOUSE_RIVAL, 15
 	checkflag ENGINE_PLAYER_IS_FEMALE
 	iftrue .rivalMusic
-	playmusic MUSIC_LASS_ENCOUNTER
+	playmusic MUSIC_MAY_ENCOUNTER
 	sjump .continueIntro
 .rivalMusic:
 	playmusic MUSIC_RIVAL_ENCOUNTER
@@ -89,15 +89,15 @@ RivalMomScript:
 	iftrue .momFemaleRival
 	writetext MomMaleRivalText1
 	waitbutton
-	writetext MomMaleRivalText2
-	waitbutton
+	;writetext MomMaleRivalText2
+	;waitbutton
 	closetext
 	end
 .momFemaleRival:
 	writetext MomFemaleRivalText1
 	waitbutton
-	writetext MomFemaleRivalText2
-	waitbutton
+	;writetext MomFemaleRivalText2
+	;waitbutton
 	closetext
 	end
 

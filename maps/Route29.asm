@@ -67,6 +67,7 @@ Route101InThBagScript:
 Route101PlayerStepsUpMovement:
     big_step UP
     big_step UP
+	big_step LEFT
     big_step UP
     step_end	
 

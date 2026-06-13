@@ -1237,29 +1237,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_29
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, TAILLOW
-	db 2, ZIGZAGOON
-	db 3, TAILLOW
 	db 3, ZIGZAGOON
-	db 2, POOCHYENA
-	db 3, HOPPIP
-	db 3, HOPPIP
-	; day
-	db 2, TAILLOW
-	db 2, ZIGZAGOON
 	db 3, TAILLOW
-	db 3, ZIGZAGOON
-	db 2, POOCHYENA
-	db 3, HOPPIP
-	db 3, HOPPIP
-	; nite
-	db 2, HOOTHOOT
-	db 2, POOCHYENA
-	db 3, HOOTHOOT
 	db 3, POOCHYENA
+	db 3, HOOTHOOT
+	db 2, ZIGZAGOON
+	db 5, ZIGZAGOON
+	db 5, ZIGZAGOON
+	; day
+	db 3, ZIGZAGOON
+	db 3, TAILLOW
+	db 3, POOCHYENA
+	db 3, HOOTHOOT
+	db 2, ZIGZAGOON
+	db 5, ZIGZAGOON
+	db 5, ZIGZAGOON
+	; nite
+	db 3, POOCHYENA
+	db 3, HOOTHOOT
+	db 3, ZIGZAGOON
+	db 3, TAILLOW
 	db 2, POOCHYENA
-	db 3, HOOTHOOT
-	db 3, HOOTHOOT
+	db 5, POOCHYENA
+	db 6, POOCHYENA
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_30

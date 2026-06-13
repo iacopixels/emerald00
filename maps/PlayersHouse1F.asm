@@ -40,9 +40,11 @@ PlayersHouse1FNewMapCallback:
 PlayersHouse1FIntroScript:
 	checkevent EVENT_PLAYERS_HOUSE_MOM_GREETED
 	iftrue .done
+	applymovement PLAYERSHOUSE1F_MACHOKEBOX_2, PlayersHouseMachoke2RightMovement
 	applymovement PLAYER, PlayersHouse1FPlayerStepsUpMovement
+	applymovement PLAYERSHOUSE1F_MACHOKEBOX_3, PlayersHouseMachoke2LeftMovement
 	turnobject PLAYERSHOUSE1F_MOM, DOWN
-	playmusic MUSIC_MOM
+	;playmusic MUSIC_MOM
 	opentext
 	writetext PlayersHouse1FWelcomeText1
 	waitbutton
@@ -70,7 +72,7 @@ PlayersHouse1FIntroScript:
 	iffalse .SetDayOfWeek
 .DayOfWeekDone:
 	closetext
-	special RestartMapMusic
+	;special RestartMapMusic
 	setevent EVENT_PLAYERS_HOUSE_MOM_GREETED
 	setevent EVENT_PLAYERS_HOUSE_MOM_INTRO
 	setscene SCENE_PLAYERSHOUSE1F_BLOCK
@@ -161,6 +163,14 @@ PlayersHouse1FTVScript:
 
 PlayersHouse1FPlayerStepsUpMovement:
 	step UP
+	step_end
+	
+PlayersHouseMachoke2RightMovement:
+	step RIGHT
+	step_end
+	
+PlayersHouseMachoke2LeftMovement:
+	step LEFT
 	step_end
 
 PokegearName:

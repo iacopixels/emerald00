@@ -29,7 +29,7 @@ NewBarkTownNewMapCallback:
 	endcallback
 
 NewBarkTownMomIntroScript:
-	showemote EMOTE_SHOCK, NEWBARKTOWN_MOM, 15
+	showemote EMOTE_HEART, NEWBARKTOWN_MOM, 15
 	applymovement NEWBARKTOWN_MOM, NewBarkTownMomIntroMovement1
 	opentext
 	writetext NewBarkTownMomIntroText1
@@ -261,10 +261,10 @@ NewBarkTownBugCatcherText3:
 	done
 
 NewBarkTownSignText:
-	text "NEW BARK TOWN"
-	para "The Town Where the"
-	line "Winds of a New"
-	cont "Beginning Blow"
+	text "LITTLEROOT TOWN"
+	para "A town that" 
+	line "can't be shaded" 
+	cont "any hue."
 	done
 
 NewBarkTownPlayersHouseSignText:
@@ -272,11 +272,12 @@ NewBarkTownPlayersHouseSignText:
 	done
 
 NewBarkTownElmsLabSignText:
-	text "ELM #MON LAB"
+	text "BIRTH #MON Lab"
 	done
 
 NewBarkTownElmsHouseSignText:
-	text "ELM'S HOUSE"
+	text "Prof. BIRTH'S" 
+	line "House"
 	done
 
 NewBarkTownTruckText:
@@ -301,14 +302,15 @@ NewBarkTown_MapEvents:
 	coord_event 11,  0, SCENE_LITTLEROOT_BUGCATCHER_STOPS_YOU, NewBarkTownBugCatcherBlock11
 
 	def_bg_events
-	bg_event  3,  7, BGEVENT_READ, NewBarkTownSign
-	bg_event 11,  5, BGEVENT_READ, NewBarkTownPlayersHouseSign
-	bg_event  3,  3, BGEVENT_READ, NewBarkTownElmsLabSign
-	bg_event  9, 13, BGEVENT_READ, NewBarkTownElmsHouseSign
+	bg_event 15, 13, BGEVENT_READ, NewBarkTownSign
+	bg_event  3,  7, BGEVENT_READ, NewBarkTownPlayersHouseSign
+	bg_event  5, 17, BGEVENT_READ, NewBarkTownElmsLabSign
+	bg_event 16,  7, BGEVENT_READ, NewBarkTownElmsHouseSign
 
 	def_object_events
 	object_event  6,  8, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownMomIntroScript, EVENT_LITTLEROOT_MOM_WELCOMES_YOU
 	object_event  2,  8, SPRITE_TRUCK_FRONT_TOP, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTruckFrontTopScript, EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
 	object_event  2,  9, SPRITE_TRUCK_FRONT_BOTTOM, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTruckFrontBottomScript, EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
 	object_event  3,  8, SPRITE_TRUCK_BACK, SPRITEMOVEDATA_BIGDOLLSYM, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTruckBackScript, EVENT_PLAYERS_HOUSE_2F_RUNNINGSHOES
-	object_event 12,  2, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownBugCatcherScript, -1
+	object_event 12,  2, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownBugCatcherScript, EVENT_GOT_A_POKEMON_FROM_BIRTH
+	
