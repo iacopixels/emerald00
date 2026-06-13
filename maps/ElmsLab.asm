@@ -710,18 +710,52 @@ RivalHurryUpText:
 	
 ; ===== Birth Aide
 
-ElmsAideScript:
+BirthAideScript:
 	faceplayer
 	opentext
-	writetext BirthAideText1
+	checkevent EVENT_BIRTH_LAB_GOT_POKEDEX	
+	iftrue .BirthAideAfterGivingPokeballsScript
+	checkevent EVENT_GOT_A_POKEMON_FROM_BIRTH
+	iftrue .BirthAideAfterProfReturnScript
+	writetext BirthAideFirstText
 	waitbutton
 	closetext
-	turnobject BIRTHLAB_RIVAL, UP
 	end
-	
-BirthAideText1:
-	text "Placeholder Text."
-	done
+.BirthAideAfterGivingPokeballsScript:
+	writetext BirthAideAfterGivingPokeballsText
+	waitbutton
+	closetext
+	end
+.BirthAideAfterProfReturnScript:
+	writetext BirthAideAfterProfReturnText
+	waitbutton
+	closetext
+	end
+		
+BirthAideFirstText:
+text "Where is prof."
+line "Birth?"
+
+para "He was supposed" 
+line "to bring pizza."
+done
+
+BirthAideAfterProfReturnText:
+text "A #MON prof." 
+line "got scared of" 
+cont "a #MON."
+
+para "Go figure<……>"
+done
+
+BirthAideAfterGivingPokeballsText:
+text "Use the #BALLs" 
+line "to catch #MON!"
+
+para "Don't be scared" 
+line "of them like the" 
+cont "Prof."
+done
 	
 AideScript_WalkBalls1:
 	applymovement ELMSLAB_ELMS_AIDE, AideWalksRight1
@@ -825,6 +859,6 @@ ElmsLab_MapEvents:
 	def_object_events
 	object_event  5,  3, SPRITE_OAK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ProfessorBirchScript, EVENT_BIRTH_LAB_THE_PROFESSOR_IS_IN
 	object_event  5,  6, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BirthLabRivalScript, EVENT_BIRTH_LAB_THE_RIVAL_IS_IN	
-	object_event  2,  9, SPRITE_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ElmsAideScript, -1
+	object_event  2,  9, SPRITE_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BirthAideScript, -1
 
 

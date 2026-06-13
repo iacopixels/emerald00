@@ -3504,7 +3504,7 @@ RivalBrendanGroup:
 
 	; RIVAL1 (2)
 	db "BRENDAN@", TRAINERTYPE_NORMAL
-	db  2, TORCHIC
+	db  5, TORCHIC
 	db -1 ; end
 
 	; RIVAL1 (3)
