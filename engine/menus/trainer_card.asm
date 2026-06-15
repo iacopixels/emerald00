@@ -46,11 +46,11 @@ TrainerCard:
 
 	farcall GetCardPic
 
-	ld hl, CardRightCornerGFX
-	ld de, vTiles2 tile $1c
-	ld bc, 1 tiles
-	ld a, BANK(CardRightCornerGFX)
-	call FarCopyBytes
+;	ld hl, CardRightCornerGFX
+;	ld de, vTiles2 tile $1c
+;	ld bc, 1 tiles
+;	ld a, BANK(CardRightCornerGFX)
+;	call FarCopyBytes
 
 	ld hl, CardStatusGFX
 	ld de, vTiles2 tile $29
@@ -365,7 +365,8 @@ TrainerCard_InitBorder:
 	dec e
 	jr nz, .loop2
 
-	ld a, $1c
+	;ld a, $1c
+	ld a, ' '
 	ld [hli], a
 	ld a, $23
 	ld [hli], a
